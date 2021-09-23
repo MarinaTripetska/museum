@@ -1,3 +1,47 @@
+@font-face {
+  font-family: Forum;
+  src: url("../../assets/fonts/forum-regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/roboto-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/roboto-medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/roboto-light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/roboto-thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
