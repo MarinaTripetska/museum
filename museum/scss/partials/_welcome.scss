@@ -1,0 +1,97 @@
+.welcome{
+    
+    padding-top: 150px;
+    min-height: 810px;
+    // background-image: url(../assets/img/mona-liza.-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // // background-position: right top 10px;
+    // background-position: calc(100% - 20px) calc(100% - 10px);
+}
+.welcome__img-relative{
+   position: relative; 
+//    z-index: 10;
+}
+.welcome__bg-img{
+position: absolute;
+top: -150px;
+right: 0;
+// z-index: 9;
+    width: 1000px;
+    height: 750px;
+
+  background-image: url(../assets/img/mona-liza.-bg.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+    // background-position: calc(100% - 20px) calc(100% - 10px);
+background-position: right top ;  
+}
+.welcome__txt-box{
+    position: relative;
+    z-index: 1;
+}
+.welcome__txt{
+margin-top: 25px;
+
+
+font-weight: 300;
+font-size: 28px;
+line-height: 1.18;
+letter-spacing: 2px;
+}
+
+.welcome__btn{
+font-weight: 300;
+font-size: 22px;
+line-height: 1.18;
+letter-spacing: 2px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-top: 75px;
+
+width: 360px;
+height: 75px;
+border: none;
+border-radius: 10px;
+color: $txtWhite;
+background-color: $bgBtnRed;
+
+cursor: pointer;
+}
+
+.modal__window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+    background-color: $bgBtnRed;
+    z-index: 9;
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__backdrop.is-hidden {
+   
+    opacity: 0;
+    pointer-events: none;
+}
+// .backdrop-coffee.is-hidden-coffee .modal-coffee {
+//     transform: translate(-50%, -50%);
+// }

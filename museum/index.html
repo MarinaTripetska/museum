@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -15,27 +21,87 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="section-dark">
       <div class="container header-container">
-        <a href=""></a>
-        <ul>
-          <li><a href="#visitiing">Visiting</a></li>
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
+        <a class="logo link" href="./index.html">
+          <img src="./assets/svg/logo.svg" alt="logo" width="49" height="26" />
+
+          <span class="logo__txt">Louvre</span></a
+        >
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#visiting">Visiting</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#explore">Explore</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#video">Video</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <section id="welcome">
-        <div class="container"></div>
+      <section id="welcome" class="welcome section-dark">
+        <div class="container welcome__img-relative">
+          <div class="welcome__bg-img"></div>
+          <div class="welcome__txt-box">
+            <h1 class="visually-hidden">Louvre Museum</h1>
+            <h2 class="section-title">
+              Welcome <br />
+              to the Louvre
+            </h2>
+            <p class="welcome__txt">From the castle to the museum</p>
+            <button class="welcome__btn" type="button" data-modal-open-btn>
+              Discover the Louvre
+            </button>
+            <div class="modal__backdrop is-hidden" data-modal-window>
+              <div class="modal__window">
+                <button
+                  type="button"
+                  aria-label="close this window"
+                  data-modal-close-btn
+                >
+                  X
+                </button>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1632496559834!6m8!1m7!1sCAoSLEFGMVFpcE9WeFpRdVN5M0J4OVRfSHBIXzdGdEJIRFRYdkk2U0YtQTEwb2NU!2m2!1d48.86181593314584!2d2.336681797486702!3f81.55!4f-16.599999999999994!5f0.7820865974627469"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="visitiing">
-        <div class="container"></div>
+      <section id="visiting" class="section">
+        <div class="container">
+          <h2
+            class="
+              section-title section-title--white-bg section-title--underline
+            "
+          >
+            Virtual tour
+          </h2>
+          <ul class="visiting__list list"></ul>
+        </div>
       </section>
+
       <section id="explore">
         <div class="container"></div>
       </section>
@@ -53,5 +119,7 @@
       </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script defer src="./index.js" type="module"></script>
   </body>
 </html>

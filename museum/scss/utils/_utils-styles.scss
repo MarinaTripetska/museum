@@ -1,16 +1,18 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+        // outline: solid 1px tomato;
 }
 
 body {
     font-family: $mainFont;    
-    line-height: 1.71;   
+    // line-height: 1.71;   
 }
 
 h1,
@@ -26,11 +28,6 @@ p {
     text-decoration: none;
 }
 
-// .link:hover,
-// .link:focus {
-    
-// }
-
 .list {
     list-style: none;
     padding-left: 0;
@@ -42,16 +39,56 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 
 .container{
-       
+      max-width: 420px;
+ padding: 0 20px;  
    height: auto;
    padding: 0 20px;
    margin: 0 auto;
-   
-    @media screen and(min-width:1920px){
-       max-width: 1920px; 
+   @media screen and(min-width:768px){
+       max-width: 768px;
+padding: 0 20px;
+   }
+   @media screen and(min-width:1024px){
+max-width: 1024px;
+
+   }
+    @media screen and(min-width:1440px){
+       max-width: 1440px; 
        padding: 0;
     }
     
+}
+.section{
+background-color: $bgWhite;
+padding: 75px 0;
+// color: $txtBlack;
+}
+.section-dark{
+    background-color: $bgBlack;
+    color: $txtWhite;
+}
+
+
+.section-title{
+    font-family: Forum;
+font-weight: 400;
+font-size: 80px;
+line-height: 1.13;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+.section-title--white-bg{
+color: $txtGold;
 }

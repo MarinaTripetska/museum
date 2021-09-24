@@ -2,4 +2,49 @@
     display: flex;
 justify-content: space-between;
 align-items: center;
+height: 150px;
+}
+.logo{
+    display: flex;
+align-items: center;
+   
+&__txt{
+        margin-left: 25px;
+    font-family: $headingFont;
+    font-weight: 400;
+    font-size: 28px;
+    // множитель
+     line-height: 1.11; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $txtWhite;
+    
+}
+}
+
+.nav__list{
+   display: flex; 
+   align-items: center;
+
+   color: $txtWhite;
+   
+font-weight: 100;
+font-size: 22px;
+line-height: 1.18;
+letter-spacing: 2px;
+
+}
+.nav__item:not(:last-child){
+margin-right: 55px;
+}
+.nav__link{
+   padding: 20px 0;
+    transition: color 300ms linear;
+   &:hover,
+   &:focus{
+       color: $txtGold;
+   }
+   &:active{
+       color: $txtGoldDark;
+   }
 }
