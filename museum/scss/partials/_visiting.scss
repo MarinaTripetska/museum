@@ -15,6 +15,11 @@
 .visiting__item{
 width: 100%;
 max-width: 440px;
+transition: transform 300ms linear;
+&:hover,
+&:focus{
+    transform: scale(1.05);
+}
 }
 .card__name{
     font-family: Forum;

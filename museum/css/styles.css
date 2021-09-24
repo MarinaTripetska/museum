@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -100,6 +101,18 @@ img {
 
 .section-title--white-bg {
   color: #9d8665;
+}
+
+.panorama-box {
+  width: 100vw;
+  height: 100vh;
+}
+
+.panorama {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .header-container {
@@ -280,6 +293,15 @@ img {
 .visiting__item {
   width: 100%;
   max-width: 440px;
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+.visiting__item:hover, .visiting__item:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card__name {

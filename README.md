@@ -1,2 +1,1 @@
-# marinatripetska-JSFE2021Q3
-Private repository for @marinatripetska
+(Link to deploy)[https://rolling-scopes-school.github.io/marinatripetska-JSFE2021Q3/museum]
