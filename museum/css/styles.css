@@ -195,29 +195,27 @@ img {
 }
 
 .welcome {
-  padding-top: 150px;
   min-height: 810px;
 }
 
-.welcome__img-relative {
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-}
-
-.welcome__bg-img {
-  position: absolute;
-  top: -150px;
-  right: 0;
-  width: 1000px;
-  height: 750px;
-  background-image: url(../assets/img/welcome-slider/mona-liza-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
 }
 
 .welcome__txt-box {
+  padding-top: 150px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  height: 100%;
+  min-height: 750px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(73%, #070707), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(90deg, #070707 73%, rgba(0, 0, 0, 0));
 }
 
 .welcome__txt {
@@ -249,7 +247,17 @@ img {
   border-radius: 10px;
   color: #FFF;
   background-color: #710707;
+  -webkit-transition: background-color 250ms linear, -webkit-transform 250ms linear;
+  transition: background-color 250ms linear, -webkit-transform 250ms linear;
+  transition: background-color 250ms linear, transform 250ms linear;
+  transition: background-color 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
   cursor: pointer;
+}
+
+.welcome__btn:hover, .welcome__btn:focus {
+  background-color: #9D8665;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .modal__window {
@@ -280,6 +288,107 @@ img {
 .modal__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.welcome__slider-wraper {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0;
+          flex: 2 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 1000px;
+  min-height: 740px;
+  z-index: 1;
+}
+
+.welcome__slider {
+  width: 100%;
+}
+
+.welcome__slide {
+  display: none;
+}
+
+.welcome__slide.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-set-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  min-height: 120px;
+  padding: 0 75px;
+  background-color: #030303;
+  z-index: 1;
+}
+
+.navigation-num {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.82;
+}
+
+.dot-set {
+  max-width: 180px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #D2B183;
+}
+
+.btn-set {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  max-width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-prev,
+.btn-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .visiting__list {
@@ -395,5 +504,25 @@ img {
 
 .explore__txt--gold-color {
   color: #CAAA7D;
+}
+
+.video__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.video__header-txt {
+  max-width: 720px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.73;
 }
 /*# sourceMappingURL=styles.css.map */

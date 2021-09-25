@@ -54,8 +54,7 @@
     </header>
     <main>
       <section id="welcome" class="welcome section-dark">
-        <div class="container welcome__img-relative">
-          <div class="welcome__bg-img"></div>
+        <div class="container flex-container">
           <div class="welcome__txt-box">
             <h1 class="visually-hidden">Louvre Museum</h1>
             <h2 class="section-title">
@@ -83,6 +82,44 @@
                   allowfullscreen="true"
                   loading="lazy"
                 ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="welcome__slider-wraper">
+            <ul class="list welcome__slider">
+              <li class="welcome__slide active">
+                <img src="./assets/img/welcome-slider/1.jpg" alt="Mona Liza" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/2.jpg" alt="" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/3.jpg" alt="" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/4.jpg" alt="" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/5.jpg" alt="" />
+              </li>
+            </ul>
+
+            <div class="navigation-set-wraper">
+              <p class="navigation-num">01 | 05</p>
+              <div class="dot-set">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="btn-set">
+                <button class="btn-prev" type="button" aria-label="arrow left">
+                  <img src="./assets/svg/arrow-left.svg" alt="arrow left" />
+                </button>
+                <button class="btn-next" type="button" aria-label="arrow right">
+                  <img src="./assets/svg/arrow-right.svg" alt="arrow right" />
+                </button>
               </div>
             </div>
           </div>
@@ -137,8 +174,33 @@
           </div>
         </div>
       </section>
-      <section id="video">
-        <div class="container"></div>
+      <section id="video" class="section video">
+        <div class="container">
+          <div class="video__header">
+            <h2 class="section-title section-title--white-bg">Video journey</h2>
+            <p class="video__header-txt">
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+          <div class="slider-box">
+            <ul class="list slider">
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+            <div class="btn-set">
+              <button class="btn-left"><<</button>
+              <div class="pagin-cirk active"></div>
+              <div class="pagin-cirk"></div>
+              <div class="pagin-cirk"></div>
+              <div class="pagin-cirk"></div>
+              <div class="pagin-cirk"></div>
+              <button class="btn-right">>></button>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="gallery">
         <div class="container"></div>
