@@ -1,1 +1,1 @@
-(Link to deploy)[https://rolling-scopes-school.github.io/marinatripetska-JSFE2021Q3/museum]
+# [Link to MUSEUM ](https://rolling-scopes-school.github.io/marinatripetska-JSFE2021Q3/museum)

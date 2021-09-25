@@ -94,13 +94,27 @@ img {
   font-family: Forum;
   font-weight: 400;
   font-size: 80px;
-  line-height: 1.13;
+  line-height: 1.12;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 .section-title--white-bg {
   color: #9d8665;
+}
+
+.section-title--underline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 25px;
+  background-color: #710707;
+  border-radius: 2px;
+}
+
+.section-title--margin-b {
+  margin-top: 75px;
 }
 
 .panorama-box {
@@ -195,7 +209,7 @@ img {
   right: 0;
   width: 1000px;
   height: 750px;
-  background-image: url(../assets/img/mona-liza.-bg.jpg);
+  background-image: url(../assets/img/welcome-slider/mona-liza-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
@@ -268,12 +282,7 @@ img {
   pointer-events: none;
 }
 
-.section-title--underline {
-  border-bottom: solid 3px #710707;
-}
-
 .visiting__list {
-  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,5 +350,50 @@ img {
   margin-top: 10px;
   font-size: 18px;
   line-height: 1.17;
+}
+
+.explore__flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  min-height: 700px;
+}
+
+.explore__column-txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.explore__column-img {
+  margin-top: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 720px;
+          flex: 0 0 720px;
+}
+
+.explore__txt {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+.explore__txt:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.explore__txt--gold-color {
+  color: #CAAA7D;
 }
 /*# sourceMappingURL=styles.css.map */

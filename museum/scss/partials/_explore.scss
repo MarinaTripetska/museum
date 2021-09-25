@@ -1,0 +1,28 @@
+.explore__flex-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 60px;
+    min-height: 700px;
+}
+.explore__column-txt{
+flex: 1 1;
+}
+.explore__column-img{
+    margin-top: 15px;
+    flex: 0 0 720px;
+}
+.explore__txt{
+font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 1.73;
+&:not(:last-child){
+    margin-bottom: 25px;
+}
+}
+
+.explore__txt--gold-color{
+color: #CAAA7D;
+}
