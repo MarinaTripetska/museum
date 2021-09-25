@@ -13,47 +13,57 @@ font-size: 22px;
 line-height: 1.73;
     }
 
-//     .slider-box{
-//         width: 100%;
-//         min-height: 1081px;
-//         background-color: lightblue;
-//     }
-//     .slider{
-//         display: flex;
-//         align-items: flex-start;
-//         flex-wrap: wrap;
-//         column-gap: 42px;
-//         row-gap: 40px;
+    .video__slider-box{
+        width: 100%;
+        min-height: 1081px;
+       
+    }
+    .video__slider{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 42px;
+        row-gap: 40px;
 
-//     }
-//     .slide{
-//         width: 100%;
-//         max-width: 452px;
-//         min-height: 254px;
-//         background-color: rgb(250, 114, 114);
-//     }
+    }
+    .video__slide{
+        width: 100%;
+        max-width: 452px;
+        min-height: 254px;
+        
+    }
     
-//     .slide1{
-//         max-width: 1440px;
-//         // flex: 1 0;
-//         min-height: 735px;
-//         // width: 100%;
-//         background-color: rgb(245, 242, 95);
-//     }
-//     .btn-set{
-// display: flex;
-// justify-content: center;
-// margin-top: 10px;
-//     }
-//     .btn-set
-//     .pagin-cirk{
-//         width: 10px;
-//         height: 10px;
-//         // border-radius: 50%;
-//         background-color: rgb(94, 91, 91);
-//     }
+    .video__slide.active{
+        max-width: 1440px;
+        min-height: 735px;
+    }
+
+    .video__btn-set{
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+max-width: 200px;
+height: 12px;
+// background-color: white;
+    }
     
-// .pagin-cirk.active{
-//     background-color: rgb(48, 46, 46);
-// }
+    .video__btn-dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #999999;
+    }
+    
+.video__btn-dot.active{
+    background-color: #333333;
+}
+.btn-left,
+.btn-right{
+    border: none;
+    background-color: transparent;
+}
+
 

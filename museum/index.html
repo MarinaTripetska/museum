@@ -183,21 +183,49 @@
               enjoy masterpieces such as Mona Lisa or Hammurabi's Code
             </p>
           </div>
-          <div class="slider-box">
-            <ul class="list slider">
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
+          <div class="section-title--margin-b video__slider-box">
+            <ul class="list video__slider">
+              <li class="video__slide active">
+                <iframe
+                  width="1440"
+                  height="735"
+                  src="https://www.youtube-nocookie.com/embed/zp1BXPX8jcU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </li>
+              <li class="video__slide">
+                <img src="./assets/video-template1.jpg" alt="template 1" />
+              </li>
+              <li class="video__slide">
+                <img src="./assets/video-template2.jpg" alt="template 2" />
+              </li>
+              <li class="video__slide">
+                <img src="./assets/video-template3.jpg" alt="template 3" />
+              </li>
             </ul>
-            <div class="btn-set">
-              <button class="btn-left"><<</button>
-              <div class="pagin-cirk active"></div>
-              <div class="pagin-cirk"></div>
-              <div class="pagin-cirk"></div>
-              <div class="pagin-cirk"></div>
-              <div class="pagin-cirk"></div>
-              <button class="btn-right">>></button>
+            <div class="video__btn-set">
+              <button
+                class="btn-left"
+                type="button"
+                aria-label="click to previous video"
+              >
+                <img src="./assets/svg/to-left.svg" alt="arrow icon" />
+              </button>
+              <div class="video__btn-dot active"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+              <button
+                class="btn-right"
+                type="button"
+                aria-label="click to next video"
+              >
+                <img src="./assets/svg/to-right.svg" alt="arrow icon" />
+              </button>
             </div>
           </div>
         </div>
