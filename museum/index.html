@@ -197,13 +197,25 @@
                 ></iframe>
               </li>
               <li class="video__slide">
-                <img src="./assets/video-template1.jpg" alt="template 1" />
+                <img
+                  src="./assets/video-template1.jpg"
+                  alt="template 1"
+                  width="452"
+                />
               </li>
               <li class="video__slide">
-                <img src="./assets/video-template2.jpg" alt="template 2" />
+                <img
+                  src="./assets/video-template2.jpg"
+                  alt="template 2"
+                  width="452"
+                />
               </li>
               <li class="video__slide">
-                <img src="./assets/video-template3.jpg" alt="template 3" />
+                <img
+                  src="./assets/video-template3.jpg"
+                  alt="template 3"
+                  width="452"
+                />
               </li>
             </ul>
             <div class="video__btn-set">
@@ -230,11 +242,193 @@
           </div>
         </div>
       </section>
-      <section id="gallery">
-        <div class="container"></div>
+      <section id="gallery" class="section-dark section-dark--padding-t">
+        <div class="container">
+          <h2 class="section-title">Art Gallery</h2>
+          <div class="gallery__view-box section-title--margin-b">
+            <ul class="gallery__container list">
+              <li class="gallery__item item-1">
+                <img src="./assets/img/gallery/galery1.jpg" alt="" />
+              </li>
+              <li class="gallery__item item-2">
+                <img src="./assets/img/gallery/galery2.jpg" alt="" />
+              </li>
+              <li class="gallery__item item-3">
+                <img src="./assets/img/gallery/galery3.jpg" alt="" />
+              </li>
+              <li class="gallery__item item-4">
+                <img src="./assets/img/gallery/galery4.jpg" alt="" />
+              </li>
+              <li class="gallery__item item-5">
+                <img src="./assets/img/gallery/galery5.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery6.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery7.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery8.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery9.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery10.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery11.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery12.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery13.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery14.jpg" alt="" />
+              </li>
+              <li class="gallery__item">
+                <img src="./assets/img/gallery/galery15.jpg" alt="" />
+              </li>
+            </ul>
+            <div class="gallery__gradient"></div>
+          </div>
+        </div>
       </section>
-      <section id="tickets">
-        <div class="container"></div>
+      <section id="tickets" class="tickets section">
+        <div class="container">
+          <h2
+            class="
+              section-title section-title--white-bg section-title--underline
+            "
+          >
+            BUY TICKETS
+          </h2>
+          <div class="tickets__flex section-title--margin-b">
+            <img
+              src="./assets/img/tickets-sec-img.jpg"
+              alt="picture"
+              width="720px"
+            />
+
+            <form class="form-buy-ticket tickets__flex">
+              <div class="ticket-type__column">
+                <p class="tickets__headline">Ticket Type</p>
+
+                <label class="radio__container radio__container--margin-t">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="ticket-type"
+                    value="Permanent exhibition"
+                    checked
+                  />
+                  Permanent exhibition
+                  <span class="checkmark"
+                    ><img src="./assets/svg/input-circle.svg" alt="#"
+                  /></span>
+                </label>
+                <label class="radio__container">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="ticket-type"
+                    value="Temporary exhibition"
+                  />
+                  Temporary exhibition
+                  <span class="checkmark"
+                    ><img src="./assets/svg/input-circle.svg" alt="#"
+                  /></span>
+                </label>
+                <label class="radio__container">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="ticket-type"
+                    value="Combined Admission"
+                  />
+                  Combined Admission
+                  <span class="checkmark"
+                    ><img src="./assets/svg/input-circle.svg" alt="#"
+                  /></span>
+                </label>
+              </div>
+              <div class="ticket-type__column">
+                <p class="tickets__headline">Amount</p>
+
+                <label class="num__container num__container--margin-t">
+                  <span class="num__age"> Basic 18+</span>
+                  <div class="num__count">
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="num__input"
+                      type="number"
+                      name="ticket-quantity-18+"
+                      value="0"
+                      min="0"
+                      max="10"
+                      step="1"
+                      readonly
+                    />
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </label>
+
+                <label class="num__container">
+                  <span class="num__age"> Senior 65+</span>
+                  <div class="num__count">
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="num__input"
+                      type="number"
+                      name="ticket-quantity-65+"
+                      value="0"
+                      min="0"
+                      max="10"
+                      step="1"
+                      readonly
+                    />
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </label>
+
+                <p class="tickets__headline total--margin-t">Total €220</p>
+                <button
+                  type="submit"
+                  class="tickets__btn tickets__btn--margin-t"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
       <section id="contacts">
         <div class="container"></div>
