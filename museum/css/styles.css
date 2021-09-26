@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -850,5 +851,48 @@ img {
 
 .tickets__btn--margin-t {
   margin-top: 52px;
+}
+
+.parallax {
+  background-image: url(../assets/img/parallax.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+
+.contacts__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.address {
+  font-style: inherit;
+}
+
+.address__name {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+.address__link--margin-t {
+  margin-top: 50px;
+}
+
+.address__link {
+  display: block;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.address__link:not(:last-child) {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

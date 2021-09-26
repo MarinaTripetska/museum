@@ -1,0 +1,23 @@
+.contacts__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+font-style: inherit;
+}
+.address__name{
+font-weight: 500;
+font-size: 28px;
+line-height: 1.18;
+}
+.address__link--margin-t{
+margin-top: 50px;
+}
+.address__link{
+    display: block;
+font-size: 22px;
+line-height: 1.18;
+}
+.address__link:not(:last-child){
+    margin-bottom: 25px;
+}
