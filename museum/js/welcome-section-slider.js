@@ -40,7 +40,7 @@ function makeActiveDot(n) {
     dots[n].classList.add('active')
 }
 function makeActiveNum(n) {
-    numOfImg.textContent = `0${n+1} | 05`;
+    numOfImg.textContent = `0${n+1}`;
     
 }
 

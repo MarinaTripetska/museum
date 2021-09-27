@@ -4,8 +4,14 @@ justify-content: space-between;
 align-items: center;
 height: 150px;
 }
+.header__logo{
+width: 199px;
+height: 33px;
+}
+
 .logo{
     display: flex;
+    justify-content: space-between;
 align-items: center;
    
 &__txt{
@@ -13,16 +19,20 @@ align-items: center;
     font-family: $headingFont;
     font-weight: 400;
     font-size: 28px;
-    // множитель
-     line-height: 1.11; 
+    line-height: 1.11; 
     letter-spacing: 5px;
     text-transform: uppercase;
     color: $txtWhite;
     
 }
 }
-
+.header__logo-txt{
+    position: relative;
+    top: 3px;
+}
 .nav__list{
+    position: relative;
+    right: 6px;
    display: flex; 
    align-items: center;
 

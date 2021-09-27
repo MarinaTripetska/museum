@@ -5,14 +5,15 @@
     flex: 1 1;
     column-gap: 60px;
 }
-.form-buy-ticket{
 
-}
 .ticket-type__column{
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
 }
-
+.ticket-type__column:nth-child(2){
+ align-items: flex-end;
+}
 
 .tickets__headline{
     
@@ -56,9 +57,8 @@ color 250ms linear;
     display: block;
     position: relative;
     line-height: 26px;
-    font-weight: 300;
     font-size: 22px;
-    line-height: 1.18;
+    
     color: $txtBlack;
     margin-left: 40px;
     
@@ -70,46 +70,36 @@ color 250ms linear;
 }
 .radio__input{
       position: absolute;
+    left: -40px;
+    top: 4px;
   opacity: 0;
-  width: 0;
-  height: 0;
-//   cursor: pointer;
+  width: 17px;
+  height: 17px;
 }
-// .radio__container::before{
-//     content: "";
-//     display: inline-block;
-//     background-image: url(../assets/svg/input-circle.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     height: 17px;
-//     width: 17px;
-//     // background-color: tomato;
 
-// }
-
-
-    .checkmark {
+.checkmark {
     position: absolute;
     top: 4px;
     left: -40px;
     height: 17px;
     width: 17px;
-    // background-color: rgb(192, 88, 88);
-    // border-radius: 50%;
-
+    z-index: 2;
+    border-radius: 50%;
+    transition: background-color $transition-time $transition-duration;
 }
 .radio__container:hover .checkmark {
     background-color: $bgBtnGold;
-    border-radius: 50%;
+    
 }
 .radio__input:checked + .checkmark::before {
     content: "";
-    display: inline-block;
+    display: block;
     width: 17px;
     height: 17px;
     position: absolute;
+    
     background-image: url(../assets/svg/input-circle-checked.svg);
-
+background-size: contain;
 
 }
 
@@ -117,37 +107,32 @@ color 250ms linear;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-
-// font-weight: 300;
-// font-size: 22px;
-// line-height: 1.18;
 }
 
 .num__container:not(:last-child){
 margin-bottom: 10px;
 }
 .num__age{
-   
-font-weight: 300;
-font-size: 22px;
-line-height: 1.18;
+   font-size: 22px;
 }
 .num__count{
     margin-top: 15px;
-    padding: 0 14px;
+    padding: 0;
+    padding: 0 5px;
     width: 150px;
     height: 50px;
 
 display: flex;
 justify-content: space-between;
 align-items: center;
-
-    border: solid 1px $bgBlack;
+border: solid 1px $bgBlack;
 }
 .num__btn{
-    width: 19px;
-    height: 38px;
-padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40px;
+padding: 15px 10px;
     
 font-weight: 400;
 font-size: 32px;
@@ -155,29 +140,29 @@ line-height: 1.16;
 
     border: none;
     background-color: $bgWhite;
+    cursor: pointer;
 }
 
 .num__input{
-    font-weight: 300;
 font-size: 22px;
-line-height: 1.18;
 text-align: center;
     border: none;
     padding: 0;
-    padding-left: 10px;
-
 }
 
-
-.radio__container--margin-t,
-.total--margin-t{
+.tickets__headline--position{
+margin-top: 40px;
+letter-spacing: 1.65px;
+}
+.radio__container--margin-t
+{
 margin-top: 50px;
 }
 .num__container--margin-t{
     margin-top: 25px;
 }
 .tickets__btn--margin-t{
-    margin-top: 52px;
+    margin-top: 60px;
 }
 // .number {
 //     all: unset;

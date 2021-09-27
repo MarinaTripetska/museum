@@ -9,12 +9,8 @@
 .visiting__item{
 width: 100%;
 max-width: 440px;
-transition: transform 300ms linear;
-&:hover,
-&:focus{
-    transform: scale(1.05);
 }
-}
+
 .card__name{
     font-family: Forum;
 font-weight:400;
@@ -29,25 +25,28 @@ margin-bottom: 22px;
     display: block;
 content: "";
 position: relative;
-bottom: -10px;
+bottom: -12px;
 left: 0;
-right: 0;
-height: 2px;
+width: 299px;
+height: 3px;
 background-color: $bgBtnRed;
-
+transition: width $transition-time $transition-duration;
 }
+}
+.card:focus .card__name:after,
+.card:hover .card__name:after{
+width: 100%;
+
 }
 .card__txt1,
 .card__txt2{
- font-family: Roboto;
 font-weight: 200;   
 }
 .card__txt1{
 font-size: 22px;
-line-height: 1.18;
 }
 .card__txt2{
-    margin-top: 10px;
+margin-top: 10px;
 font-size: 18px;
 line-height: 1.17;
 }

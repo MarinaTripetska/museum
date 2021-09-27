@@ -2,13 +2,11 @@
     .video__header{
 display: flex;
 justify-content: space-between;
-align-items: start;
+align-items: center;
        
     }
      .video__header-txt {
         max-width: 720px;
-font-family: Roboto;
-font-weight: 300;
 font-size: 22px;
 line-height: 1.73;
     }
@@ -37,11 +35,28 @@ line-height: 1.73;
         max-width: 1440px;
         min-height: 735px;
     }
+   
+    .relative{
+        position: relative;
+    }
+    .template-play-video-btn{
+        position: absolute;
+        // display: block;
+        top: 215px;
+        left: 605px;
+        cursor: pointer;
+      fill: $bgWhite;
+      transition: fill $transition-time $transition-duration;
+    }
 
-    .video__btn-set{
+.video__slide:hover.active .template-play-video-btn{
+fill: rgb(145, 144, 144);
+}
+
+    .video__btns-set{
 display: flex;
 justify-content: space-between;
-margin-top: 40px;
+margin-top: 37px;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
@@ -49,21 +64,46 @@ max-width: 200px;
 height: 12px;
 // background-color: white;
     }
-    
+ .video__btn-dot-set{
+     display: flex;
+     flex: 1 0 100%;
+     max-width: 140px;
+     justify-content: space-between;
+ }   
     .video__btn-dot{
         width: 12px;
         height: 12px;
         border-radius: 50%;
         background-color: #999999;
+        transition:  background-color $transition-time $transition-duration;
+   cursor: pointer;
+    }
+    .video__btn-arrow{
+display: flex;
+justify-content: center;
+align-items: center;
+
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    
+cursor: pointer;
     }
     
-.video__btn-dot.active{
-    background-color: #333333;
-}
-.btn-left,
-.btn-right{
-    border: none;
-    background-color: transparent;
+.video__btn-arrow-icon{
+    width: 10px;
+    height: 12px;
+    fill: #999;
+            transition: fill $transition-time $transition-duration;
 }
 
+.video__btn-dot.active,
+.video__btn-dot:hover,
+.video__btn-dot:focus{
+    background-color: #333333;
+}
+.video__btn-arrow:hover .video__btn-arrow-icon,
+.video__btn-arrow:focus .video__btn-arrow-icon{
+    fill: #333333;
+}
 
