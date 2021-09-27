@@ -1,4 +1,9 @@
 export default {
+wlcSecModalOpenBtn: document.querySelector('[data-modal-open-btn]'),
+wlcSecModalWindow: document.querySelector('[data-modal-window]'),
+wlcSecModalCloseBtn:  document.querySelector('[data-modal-close-btn]'),
+
+
     wlcSecBtnPrev: document.querySelector('.btn-prev'),
     wlcSecBtnNext: document.querySelector('.btn-next'),
     wlcSecDotsBox: document.querySelector('.dot-set'),

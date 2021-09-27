@@ -281,18 +281,6 @@ img {
           transform: scale(1.05);
 }
 
-.modal__window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  padding: 40px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .modal__backdrop {
   position: fixed;
   top: 0;
@@ -309,6 +297,43 @@ img {
 .modal__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.modal__window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.modal__backdrop.is-hidden .modal__window {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.modal__close-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  border: solid 1px #000;
+  border-radius: 50%;
+  background-color: #710707;
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.modal__close-btn:hover, .modal__close-btn:focus {
+  opacity: 1;
 }
 
 .welcome__slider-wraper {
@@ -1142,7 +1167,6 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 188px;
-  border-bottom: solid 3px #666666;
 }
 
 .footer__logo {
@@ -1272,6 +1296,10 @@ img {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: #9d8665;
+}
+
+.footer__underline {
+  border-bottom: solid 3px #666666;
 }
 
 .footer-bottom {

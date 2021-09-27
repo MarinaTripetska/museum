@@ -1,30 +1,10 @@
 .welcome{    
-    // padding-top: 150px;
-    min-height: 810px;
+     min-height: 810px;
     }
-// .welcome__img-relative{
-//    position: relative; 
-// //    z-index: 10;
-// }
-// .welcome__bg-img{
-// position: absolute;
-// top: -150px;
-// right: 0;
-// // z-index: 9;
-//     width: 1000px;
-//     height: 750px;
 
-//   background-image: url(../assets/img/welcome-slider/mona-liza-bg.jpg);
-// background-repeat: no-repeat;
-// background-size: contain;
-//     // background-position: calc(100% - 20px) calc(100% - 10px);
-// background-position: right top ;  
-// }
 .flex-container{
     display: flex;
     justify-content: space-between;
-    // align-items: center;
-    // align-items: stretch;
     position: relative;
 }
 .welcome__txt-box{
@@ -74,18 +54,6 @@ cursor: pointer;
 }
 }
 
-.modal__window{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal__backdrop{
     position: fixed;
     top: 0;
@@ -104,6 +72,42 @@ cursor: pointer;
     opacity: 0;
     pointer-events: none;
 }
+.modal__window{
+    position: absolute;
+      width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+    transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(0);
+    
+}
+.modal__backdrop.is-hidden .modal__window{
+     transform: translateY(-100%);
+}
+.modal__close-btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    border: solid 1px $bgBtnBlack;
+    border-radius: 50%;
+    background-color: $bgBtnRed;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity $transition-time $transition-duration;
+    &:hover,
+    &:focus{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
 .welcome__slider-wraper{
     flex: 2 0;
 
@@ -115,24 +119,19 @@ max-width: 1000px;
 min-height: 740px;
 z-index: 1;
 }
+
+
+
 .welcome__slider{
 width: 100%;
 }
 .welcome__slide{
     display: none;
-    // overflow: hidden;
-    //    opacity: 0;
-       
-//    pointer-events: none;
-    // width: 0;
-    // height: 0;
 }
 .welcome__slide.active{
     display: block;
-    // opacity: 1;
     width: 100%;
     height: 100%;
-    // transition: opacity 200ms linear;
 }
 .navigation-set-wraper{
     display: flex;

@@ -8,7 +8,7 @@
     align-items: flex-start;
     // height: 100%;
     height: 188px;
-    border-bottom: solid 3px #666666;
+    // border-bottom: solid 3px #666666;
 }
 .footer__logo{
 position: relative;
@@ -107,11 +107,9 @@ top: 15px;
   fill: $txtGold;
 }
 
-// .footer__underline{
-    // border-bottom: solid 3px #666666;
-
-//     max-width: 1440px;
-// }
+.footer__underline{
+    border-bottom: solid 3px #666666;
+}
 .footer-bottom{
     height: 124px;
     display: flex;

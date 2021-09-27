@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museum</title>
+    <link rel="shortcut icon" type="ico" href="./assets/img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,6 +69,7 @@
             <div class="modal__backdrop is-hidden" data-modal-window>
               <div class="modal__window">
                 <button
+                  class="modal__close-btn"
                   type="button"
                   aria-label="close this window"
                   data-modal-close-btn
@@ -75,8 +77,9 @@
                   X
                 </button>
                 <iframe
+                  class="welcome__iframe"
                   src="https://www.google.com/maps/embed?pb=!4v1632496559834!6m8!1m7!1sCAoSLEFGMVFpcE9WeFpRdVN5M0J4OVRfSHBIXzdGdEJIRFRYdkk2U0YtQTEwb2NU!2m2!1d48.86181593314584!2d2.336681797486702!3f81.55!4f-16.599999999999994!5f0.7820865974627469"
-                  style="border: 0"
+                  style="border: 0; width: 100%; height: 100%"
                   allowfullscreen
                   loading="lazy"
                 ></iframe>
@@ -660,6 +663,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
