@@ -1,9 +1,9 @@
-import "./js/auto-cheking.js"
+import "./auto-cheking.js"
 
 
-import "./js/visiting-section-build-template.js"
-import "./js/welcome-section-slider.js"
-import "./js/video-section.js"
+import "./visiting-section-build-template.js"
+import "./welcome-section-slider.js"
+import "./video-section.js"
 
 
 
