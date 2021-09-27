@@ -41,7 +41,7 @@ line-height: 1.73;
     }
     .template-play-video-btn{
         position: absolute;
-        // display: block;
+        
         top: 215px;
         left: 605px;
         cursor: pointer;
@@ -52,6 +52,60 @@ line-height: 1.73;
 .video__slide:hover.active .template-play-video-btn{
 fill: rgb(145, 144, 144);
 }
+
+.progress__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 85px;
+    background-color: $bgBlack;
+}
+.btn-play{
+    display: block;
+    fill: #B3B3B3;
+}
+.progress__video,
+.progress__voise {
+    background-color: #C4C4C4;
+    
+    
+    height: 8px;
+    
+    outline: none;
+    transition: background-image 450ms ease-in;
+    -webkit-appearance: none;
+}
+.progress__video{
+ width: 929px;   
+     background-image: linear-gradient(to right, #710707 0%, #710707 53%, #C4C4C4 53%, #C4C4C4 100%);
+}
+.progress__voise{
+    width: 155px;
+        background-image: linear-gradient(to right, #710707 0%, #710707 40%, #C4C4C4 40%, #C4C4C4 100%);
+}
+
+
+
+
+.progress__video::-webkit-slider-thumb,
+.progress__voise::-webkit-slider-thumb
+ {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: $bgWhite;
+}
+
+
+.range-icon{
+  
+     cursor: pointer;
+}
+
 
     .video__btns-set{
 display: flex;

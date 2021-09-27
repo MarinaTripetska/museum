@@ -8,4 +8,7 @@ export default {
 
     visitingSectionList: document.querySelector('.visiting__list'),
 
+    videoSecProgressVideo: document.querySelector('.progress__video'),
+videoSecProgressVoise: document.querySelector('.progress__voise'),
+
 }
