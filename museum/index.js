@@ -1,6 +1,12 @@
+import "./js/auto-cheking.js"
+
+
 import "./js/visiting-section-build-template.js"
 import "./js/welcome-section-slider.js"
 import "./js/video-section.js"
+
+
+
 const refs = {
 modalOpenBtnWelcomeSection: document.querySelector('[data-modal-open-btn]'),
 modalWindowWelcomeSection: document.querySelector('[data-modal-window]'),
