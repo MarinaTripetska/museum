@@ -1,0 +1,293 @@
+.welcome{    
+     min-height: 810px;
+     overflow-x: hidden;
+
+     @media screen and(max-width: map-get($breakpoints, laptop)) {
+
+    min-height: 585px;
+ }
+    }
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.welcome__txt-box{
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    min-height: 750px;
+    background-image: linear-gradient(90deg, #070707 73%, rgba(0, 0, 0, 0));
+
+   @media screen and(max-width: map-get($breakpoints, laptop)) {
+
+      padding-top: 50px;
+         min-height: 585px;
+opacity: 1;
+transition: opacity $transition-time $transition-duration;
+        &.menu-open {
+           opacity: 0;
+        }
+   }
+}
+.welcome__txt{
+margin-top: 28px;
+font-size: 28px;
+letter-spacing: 2px;
+
+   @media screen and(max-width: map-get($breakpoints, laptop)) {
+
+       font-size: 24px;
+       line-height: 1.17;
+   }
+}
+
+.welcome__btn{
+display: flex;
+justify-content: center;
+align-items: center; 
+
+font-size: 22px;
+letter-spacing: 2px;
+margin-top: 75px;
+ font-style: normal;
+
+width: 360px;
+height: 75px;
+
+border: none;
+border-radius: 10px;
+color: $txtWhite;
+background-color: $bgBtnRed;
+transition: background-color 250ms linear,
+transform 250ms linear;
+
+cursor: pointer;
+
+&:hover,
+&:focus{
+    background-color: $bgBtnGold;
+     transform: scale(1.01);
+}
+
+  @media screen and(max-width: map-get($breakpoints, laptop)) {
+margin-top: 50px;
+
+      width: 300px;
+      height: 60px;
+
+      font-size: 20px;
+line-height: 1.15;
+
+  }
+}
+
+.modal__backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+    background-color: $bgBtnRed;
+    z-index: 9;
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__backdrop.is-hidden {
+   
+    opacity: 0;
+    pointer-events: none;
+}
+.modal__window{
+    position: absolute;
+      width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+    transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(0);
+    
+}
+.modal__backdrop.is-hidden .modal__window{
+     transform: translateY(-100%);
+}
+.modal__close-btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    border: solid 1px $bgBtnBlack;
+    border-radius: 50%;
+    background-color: $bgBtnRed;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity $transition-time $transition-duration;
+    &:hover,
+    &:focus{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.welcome__slider-wraper{
+    flex: 2 0;
+
+    display: flex;
+position: absolute;
+right: 0;
+top: 0;
+max-width: 1000px;
+min-height: 740px;
+z-index: 1;
+ 
+ @media screen and(max-width: map-get($breakpoints, laptop)){
+     max-width: 700px;
+min-height: 465px;
+   
+ }
+}
+
+
+
+.welcome__slider{
+width: 100%;
+}
+.welcome__slide{
+    display: none;
+}
+.welcome__slide.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.navigation-set-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+
+    width: 100%;
+    max-width: 600px;
+    min-height: 120px;
+    padding: 0 73px;
+
+    background-color: $bgBlack;
+
+    z-index: 1;
+
+     @media screen and(max-width: map-get($breakpoints, laptop)) {
+     max-width: 700px;
+     padding: 0 75px;
+
+     justify-content: flex-end;
+     column-gap: 45px;
+     
+ }
+}
+.navigation-num__box{
+width: 76px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+@media screen and(max-width: map-get($breakpoints, laptop)) {
+     width: 71px;
+}
+}
+
+.navigation-num,
+.dash,
+.navigation-num2{
+font-weight: 400;
+font-size: 22px;
+line-height: 1.82;
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+    //  width: 71px;
+font-size: 20px;
+line-height: 2;
+ }
+}
+
+.dot-set{
+   max-width: 180px;
+flex: 1 1;
+display: flex;
+justify-content: space-between;
+
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+     max-width: 160px;
+     
+
+ }
+}
+.dot{
+    width: 16px;
+    height: 16px;
+    background-color: $bgWhite;
+    cursor: pointer;
+    transition: background-color $transition-time $transition-duration ;
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+    width: 12px;
+    height: 12px;
+
+ }
+}
+.dot.active,
+.dot:hover{
+    background-color: #D2B183;
+}
+
+
+.btn-set{
+    flex: 1 1;
+    // width: 100%;
+    // height: 100%;
+max-width: 85px;
+display: flex;
+justify-content: space-between;
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+     max-width: 80px;
+      }
+
+}
+
+.btn-prev,
+.btn-next{
+     width: 35px;
+     height: 15px;
+
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  
+}
+.btn-arrow-icon{
+    width: 30px;
+    height: 8px;
+    fill: white;
+    transition: fill $transition-time $transition-duration;
+}
+.btn-prev:hover .btn-arrow-icon,
+.btn-next:hover .btn-arrow-icon,
+.btn-prev:focus .btn-arrow-icon,
+.btn-next:focus .btn-arrow-icon{
+   fill: $bgBtnGold;
+}
+
+
+

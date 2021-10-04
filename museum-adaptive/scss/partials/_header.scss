@@ -1,0 +1,157 @@
+.header-container{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+height: 150px;
+overflow: hidden;
+@media screen and(max-width: map-get($breakpoints, laptop )){
+   height: 130px; 
+   position: relative;
+}
+}
+.header__logo{
+width: 199px;
+height: 33px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+   
+&__txt{
+        margin-left: 25px;
+    font-family: $headingFont;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.11; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $txtWhite;
+    
+}
+}
+.header__logo-txt{
+    position: relative;
+    top: 3px;
+}
+.nav{
+@media screen and (max-width: map-get($breakpoints, laptop)) {
+    position: absolute;
+    top: 130px;
+    left: -300px;
+    max-width: 297px;
+
+    height: 500px;
+    padding: 35px 55px;
+    background-color: $bgBlack;
+        // background-image: linear-gradient(90deg, #070707 73%, rgba(0, 0, 0, 0));
+    z-index: 1000;
+    opacity: 0;
+    transition: left 300ms $transition-duration,
+    opacity 300ms $transition-duration;
+    &.is-open{
+        left:0px;
+        opacity: 1;
+    }
+}
+}
+.nav__list{
+    position: relative;
+    right: 6px;
+   display: flex; 
+   align-items: center;
+
+   color: $txtWhite;
+   
+font-weight: 100;
+font-size: 22px;
+line-height: 1.18;
+letter-spacing: 2px;
+
+@media  screen and (max-width: map-get($breakpoints, laptop)) {
+  flex-direction: column;
+  align-items: start;
+
+  font-size: 20px;
+line-height: 1.15;
+
+}
+
+
+}
+
+.nav__item:not(:last-child){
+    @media screen and (min-width: map-get($breakpoints, laptop )+1px) {
+        margin-right: 55px;
+    }
+    @media screen  and(max-width: map-get($breakpoints, laptop)){
+margin-bottom: 25px;
+    }
+        
+    
+
+}
+.nav__link{
+   padding: 20px 0;
+    transition: color 300ms linear;
+
+    &:hover,
+    &:focus{
+        color: $txtGold;
+    }
+    &:active{
+        color: $txtGoldDark;
+    }
+    @media screen and(max-width: map-get($breakpoints, laptop )){
+          padding: 10px 0;
+        width: 122px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+   &::after {
+    content: "";
+    display: inline-block;
+    width: 7.5px;
+    height: 12px;
+    background-image: url(../assets/svg/menu-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+}
+}
+.menu-btn-switch{
+    display: none;
+    @media screen and (max-width: map-get($breakpoints, laptop)) {
+      display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    width: 32px;
+    height: 25px;
+   cursor: pointer;
+    }
+   
+}
+.menu-btn-switch-svg{
+width: 32px;
+height: 25px;
+
+}
+.burger-icon{
+display: none;
+}
+.burger-icon.active{
+    display: block;
+}
+
+.cross-icon{
+    display: none;
+
+}
+.cross-icon.active{
+    display: block;
+}

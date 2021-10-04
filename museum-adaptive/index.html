@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum</title>
+    <link rel="shortcut icon" type="ico" href="./assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="section-dark">
+      <div class="container header-container">
+        <a class="logo header__logo link" href="./index.html">
+          <img src="./assets/svg/logo.svg" alt="logo" width="49" height="26" />
+
+          <span class="header__logo-txt logo__txt">Louvre</span></a
+        >
+        <nav class="nav" data-navigation>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#visiting">Visiting</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#explore">Explore</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#video">Video</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-btn-switch" type="button">
+          <svg class="menu-btn-switch-svg">
+            <use
+              class="burger-icon active"
+              href="./assets/svg/sprite.svg#burger"
+            ></use>
+            <use class="cross-icon" href="./assets/svg/sprite.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="welcome" class="welcome section-dark">
+        <div class="container flex-container">
+          <div class="welcome__txt-box">
+            <h1 class="visually-hidden">Louvre Museum</h1>
+            <h2 class="section-title">
+              Welcome <br />
+              to the Louvre
+            </h2>
+            <p class="welcome__txt">From the castle to the museum</p>
+            <button class="welcome__btn" type="button" data-modal-open-btn>
+              Discover the Louvre
+            </button>
+            <div class="modal__backdrop is-hidden" data-modal-window>
+              <div class="modal__window">
+                <button
+                  class="modal__close-btn"
+                  type="button"
+                  aria-label="close this window"
+                  data-modal-close-btn
+                >
+                  X
+                </button>
+                <iframe
+                  class="welcome__iframe"
+                  src="https://www.google.com/maps/embed?pb=!4v1632496559834!6m8!1m7!1sCAoSLEFGMVFpcE9WeFpRdVN5M0J4OVRfSHBIXzdGdEJIRFRYdkk2U0YtQTEwb2NU!2m2!1d48.86181593314584!2d2.336681797486702!3f81.55!4f-16.599999999999994!5f0.7820865974627469"
+                  style="border: 0; width: 100%; height: 100%"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="welcome__slider-wraper">
+            <ul class="list welcome__slider">
+              <li class="welcome__slide active">
+                <img src="./assets/img/welcome-slider/1.jpg" alt="Mona Liza" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/2.jpg" alt="2" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/3.jpg" alt="3" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/4.jpg" alt="4" />
+              </li>
+              <li class="welcome__slide">
+                <img src="./assets/img/welcome-slider/5.jpg" alt="5" />
+              </li>
+            </ul>
+
+            <div class="navigation-set-wraper">
+              <div class="navigation-num__box">
+                <span class="navigation-num">01</span>
+                <span class="dash">|</span>
+                <span class="navigation-num2">05</span>
+              </div>
+              <div class="dot-set">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="btn-set">
+                <button class="btn-prev" type="button" aria-label="arrow left">
+                  <svg class="btn-arrow-icon">
+                    <use href="./assets/svg/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-next" type="button" aria-label="arrow right">
+                  <svg class="btn-arrow-icon">
+                    <use href="./assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="visiting" class="section">
+        <div class="container">
+          <h2
+            class="
+              section-title section-title--white-bg section-title--underline
+            "
+          >
+            Virtual tour
+          </h2>
+          <ul class="visiting__list section-title--margin-b list"></ul>
+        </div>
+      </section>
+
+      <section id="explore" class="section section-dark">
+        <div class="container explore__flex-box">
+          <div class="explore__column-txt">
+            <h2 class="section-title section-title--underline">
+              Picture explore
+            </h2>
+            <div class="explore__txt-box">
+              <p class="explore__txt section-title--margin-b">
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading
+                artist of the Spanish Golden Age.
+              </p>
+              <p class="explore__txt">
+                It was cleaned in 1984 to remove a
+                <span class="explore__txt--gold-color">"yellow veil"</span> of
+                dust that had gathered since the previous restoration in the
+                19th century.
+              </p>
+              <p class="explore__txt">
+                The cleaning provoked furious protests, not because the picture
+                had been damaged in any way, but because it looked different.
+              </p>
+            </div>
+          </div>
+          <div class="explore__column-img explore__flex-box">
+            <img
+              class="explore__img"
+              src="./assets/img/explore/before-small.jpg"
+              alt="art before restoration"
+              width="440"
+            />
+            <svg class="explore-slider-dash">
+              <use href="./assets/svg/sprite.svg#explore-slider-dash"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="section video">
+        <div class="container">
+          <div class="video__header">
+            <h2 class="section-title section-title--white-bg">Video journey</h2>
+            <p class="video__header-txt">
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+
+          <div class="video__big-slide section-title--margin-b">
+            <img
+              class="template-main-video"
+              src="./assets/template-main-video.jpg"
+              alt="main video template"
+              width="1440"
+              height="650"
+            />
+            <button class="template-play-video--btn">
+              <svg class="template-play-video--icon">
+                <use
+                  href="./assets/svg/sprite.svg#template-play-video-btn"
+                ></use>
+              </svg>
+            </button>
+            <div class="progress__box">
+              <button class="range__btn">
+                <svg class="range-icon range-icon--play">
+                  <use href="./assets/svg/sprite.svg#btn-play"></use>
+                </svg>
+              </button>
+              <input
+                type="range"
+                value="53"
+                min="0"
+                max="100"
+                step="1"
+                class="progress__video"
+              />
+              <button class="range__btn">
+                <svg class="range-icon range-icon--volume">
+                  <use href="./assets/svg/sprite.svg#volume"></use>
+                </svg>
+              </button>
+              <input
+                type="range"
+                value="40"
+                min="0"
+                max="100"
+                step="1"
+                class="progress__voise"
+              />
+              <button class="range__btn">
+                <svg class="range-icon range-icon--frame">
+                  <use href="./assets/svg/sprite.svg#frame"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- <iframe
+            srcdoc="<a href='https://www.youtube-nocookie.com/embed/zp1BXPX8jcU'>
+              <img width=100% height=100% src='./assets/video-template1.jpg' alt=''></a>"
+            title="YouTube video player"
+            allow="autoplay"
+            allowfullscreen
+          ></iframe> -->
+
+          <ul class="list video__slider">
+            <li class="video__slide">
+              <iframe
+                loading="lazy"
+                srcdoc="<style>html, body, a, img {display: block; width: 100%; height: 100%; margin: 0; padding: 0;}
+                  a:before, a:after {position: absolute; content: '';
+                   left: 50%; top: 50%;} a:before {margin: -4.9% 0 0 -7%;
+                     background: rgba(31,31,30,.8); padding-top: 9.8%; width: 14%; border-radius: 16% / 27%;}
+                      a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
+                      a:hover:before {background: #c0171c;}</style>
+                      <a href='https://www.youtube-nocookie.com/embed/zp1BXPX8jcU'>
+              <img width=100% src='./assets/video-template1.jpg' alt=''></a>"
+                src="https://www.youtube-nocookie.com/embed/zp1BXPX8jcU"
+                title="YouTube video player"
+                allow="autoplay"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li class="video__slide">
+              <iframe
+                srcdoc="<style>
+                  html, body, a, img {display: block; width: 100%; height: 100%; margin: 0; padding: 0;}a:before, a:after {position: absolute; content: '';
+                   left: 50%; top: 50%;} a:before {margin: -4.9% 0 0 -7%;
+                     background: rgba(31,31,30,.8); padding-top: 9.8%; width: 14%; border-radius: 16% / 27%;}
+                      a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
+                      a:hover:before {background: #c0171c;}</style>
+                <a href='https://www.youtube-nocookie.com/embed/Vi5D6FKhRmo'>
+              <img width=100% height=100% src='./assets/video-template2.jpg' alt=''></a>"
+                loading="lazy"
+                src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li class="video__slide">
+              <iframe
+                srcdoc="<style>
+                  html, body, a, img {display: block; width: 100%; height: 100%; margin: 0; padding: 0;}a:before, a:after {position: absolute; content: '';
+                   left: 50%; top: 50%;} a:before {margin: -4.9% 0 0 -7%;
+                     background: rgba(31,31,30,.8); padding-top: 9.8%; width: 14%; border-radius: 16% / 27%;}
+                      a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
+                      a:hover:before {background: #c0171c;}</style>
+                <a href='https://www.youtube-nocookie.com/embed/NOhDysLnTvY'>
+              <img width=100% height=auto src='./assets/video-template4.jpg' alt=''></a>"
+                loading="lazy"
+                src="https://www.youtube.com/embed/NOhDysLnTvY"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </li>
+          </ul>
+          <div class="video__btns-set">
+            <button
+              class="video__btn-arrow"
+              type="button"
+              aria-label="click to previous video"
+            >
+              <svg class="video__btn-arrow-icon">
+                <use href="./assets/svg/sprite.svg#to-left"></use>
+              </svg>
+            </button>
+            <div class="video__btn-dot-set">
+              <div class="video__btn-dot active"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+              <div class="video__btn-dot"></div>
+            </div>
+            <button
+              class="video__btn-arrow"
+              type="button"
+              aria-label="click to next video"
+            >
+              <svg class="video__btn-arrow-icon">
+                <use href="./assets/svg/sprite.svg#to-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section-dark section-dark--padding-t">
+        <div class="container">
+          <h2 class="section-title">Art Gallery</h2>
+          <div class="gallery__view-box section-title--margin-b">
+            <ul class="gallery__container list"></ul>
+            <div class="gallery__gradient"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tickets" class="tickets section">
+        <div class="container">
+          <h2
+            class="
+              section-title section-title--white-bg section-title--underline
+            "
+          >
+            BUY TICKETS
+          </h2>
+          <div class="tickets__flex section-title--margin-b">
+            <picture class="tickets-img">
+              <source
+                srcset="
+                  ./assets/img/tickets-img-laptop-1x.jpg 1x,
+                  ./assets/img/tickets-img-laptop-2x.jpg 2x
+                "
+                media="(max-width: 1420px)"
+                type="image/jpeg"
+              />
+              <img src="./assets/img/tickets-sec-img.jpg" alt="picture" />
+            </picture>
+            <form class="form-buy-ticket tickets__flex">
+              <div class="ticket-type__column">
+                <p class="tickets__headline">Ticket Type</p>
+
+                <div class="radio__container radio__container--margin-t">
+                  <label for="permanent-exhibition"
+                    ><input
+                      id="permanent-exhibition"
+                      class="radio__input"
+                      type="radio"
+                      name="ticket-type"
+                      value="Permanent exhibition"
+                      checked
+                    /><span class="checkmark"
+                      ><img src="./assets/svg/input-circle.svg" alt="#" /></span
+                    >Permanent exhibition</label
+                  >
+                </div>
+
+                <div class="radio__container">
+                  <label for="temporary-exhibition">
+                    <input
+                      id="temporary-exhibition"
+                      class="radio__input"
+                      type="radio"
+                      name="ticket-type"
+                      value="Temporary exhibition"
+                    /><span class="checkmark"
+                      ><img src="./assets/svg/input-circle.svg" alt="#" /></span
+                    >Temporary exhibition</label
+                  >
+                </div>
+
+                <div class="radio__container">
+                  <label for="combined-admission"
+                    ><input
+                      id="combined-admission"
+                      class="radio__input"
+                      type="radio"
+                      name="ticket-type"
+                      value="Combined Admission"
+                    /><span class="checkmark"
+                      ><img src="./assets/svg/input-circle.svg" alt="#" /></span
+                    >Combined Admission</label
+                  >
+                </div>
+              </div>
+
+              <div class="ticket-type__column">
+                <p class="tickets__headline">Amount</p>
+                <div class="num__container num__container--margin-t">
+                  <p class="num__age">Basic 18+</p>
+                  <output class="num__count">
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    >
+                      <svg class="num__btn-icon" width="16" height="3">
+                        <use href="./assets/svg/sprite.svg#minus"></use>
+                      </svg>
+                    </button>
+                    <input
+                      class="num__input"
+                      type="number"
+                      name="ticket-quantity-18+"
+                      value="1"
+                      min="0"
+                      max="20"
+                      step="1"
+                      readonly
+                    />
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    >
+                      <svg class="num__btn-icon" width="17" height="17">
+                        <use href="./assets/svg/sprite.svg#plus"></use>
+                      </svg>
+                    </button>
+                  </output>
+                </div>
+
+                <div class="num__container num__container--margin-t">
+                  <p class="num__age">Senior 65+</p>
+                  <output class="num__count">
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                    >
+                      <svg class="num__btn-icon" width="16" height="3">
+                        <use href="./assets/svg/sprite.svg#minus"></use>
+                      </svg>
+                    </button>
+                    <input
+                      class="num__input"
+                      type="number"
+                      name="ticket-quantity-65+"
+                      value="1"
+                      min="0"
+                      max="20"
+                      step="1"
+                      readonly
+                    />
+                    <button
+                      class="num__btn"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                    >
+                      <svg class="num__btn-icon" width="17" height="17">
+                        <use href="./assets/svg/sprite.svg#plus"></use>
+                      </svg>
+                    </button>
+                  </output>
+                </div>
+
+                <p
+                  class="
+                    tickets__headline
+                    num__container--margin-t
+                    tickets__headline--total
+                  "
+                >
+                  Total €220
+                </p>
+                <button
+                  type="submit"
+                  class="tickets__btn tickets__btn--margin-t"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="parallax"></div>
+
+      <section id="contacts" class="section">
+        <div class="container">
+          <h2
+            class="
+              section-title section-title--white-bg section-title--underline
+            "
+          >
+            Contacts
+          </h2>
+          <div class="contacts__flex section-title--margin-b">
+            <address class="address">
+              <p class="address__name">
+                Palais Royal <br />
+                Musee du Louvre
+              </p>
+              <p class="address__link address__link--margin-t">
+                address: 75001 Paris, France
+              </p>
+              <a class="link address__link" href="tel:+330140205050"
+                >phone: +33(0) 1 40 20 50 50</a
+              >
+              <a class="link address__link" href="mailto:info@louvre.fr"
+                >mail: info@louvre.fr</a
+              >
+            </address>
+            <picture>
+              <source
+                srcset="
+                  ./assets/img/map-laptop.png    1x,
+                  ./assets/img/map-laptop@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width:1260px)"
+              />
+              <img src="./assets/img/map.png" alt="map" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-dark">
+      <div class="container footer__top">
+        <a class="logo footer__logo link" href="./index.html">
+          <img src="./assets/svg/logo.svg" alt="logo" width="49" height="26" />
+
+          <span class="footer__logo-txt logo__txt">Louvre</span></a
+        >
+        <nav class="footer__nav">
+          <ul class="list footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#visiting">Visiting</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#explore">Explore</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#video">Video</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#gallery">Gallery</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#tickets">Tickets</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="footer__social-list list">
+          <li class="social-item">
+            <a
+              class="social-link link"
+              href="https://www.youtube.com/user/louvre"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to our youtube"
+            >
+              <svg class="social-icon">
+                <use href="./assets/svg/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link link"
+              href="https://www.instagram.com/museelouvre/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to our instagram"
+            >
+              <svg class="social-icon">
+                <use href="./assets/svg/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link link"
+              href="https://www.facebook.com/museedulouvre"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to our facebook"
+            >
+              <svg class="social-icon">
+                <use href="./assets/svg/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link link"
+              href="http://twitter.com/museelouvre"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to our twitter"
+              ><svg class="social-icon">
+                <use href="./assets/svg/sprite.svg#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link link"
+              href="https://www.pinterest.fr/museedulouvre/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to our pinterest"
+              ><svg class="social-icon">
+                <use href="./assets/svg/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__underline"></div>
+      <div class="container footer-bottom">
+        <p>&#169; 2021</p>
+        <a
+          class="link footer__nav-link"
+          href="https://rs.school/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >The Rolling Scopes School</a
+        >
+        <a
+          class="link footer__nav-link"
+          href="https://github.com/MarinaTripetska"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Marina Tripetska</a
+        >
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

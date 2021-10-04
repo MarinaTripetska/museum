@@ -1,0 +1,94 @@
+.visiting__list{
+    display: flex;
+    justify-content: center;
+    // align-items: start;
+    
+    flex-wrap: wrap;
+    row-gap:75px; 
+column-gap: 60px;
+// overflow-x: hidden;
+  @media screen and(max-width: map-get($breakpoints, laptop)) {
+     row-gap:60px;
+     column-gap: 108px;
+   
+   
+    
+}
+}
+.visiting__item{
+ width: calc(33.3% - 60px);
+
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+    width: calc(50% - 108px);
+    max-width: 330px;
+    
+ }
+
+}
+// .card{
+//     display: inline-flex;
+//    flex-wrap: wrap;
+// }
+.card__name{
+    font-family: Forum;
+font-weight:400;
+font-size: 32px;
+line-height: 1.09;
+letter-spacing: 5px;
+text-transform: uppercase;
+
+margin-top: 25px;
+margin-bottom: 22px;
+
+
+@media screen and(max-width: map-get($breakpoints, desktop)){
+font-size: 28px;
+line-height: 1.11;
+letter-spacing: 3px;
+}
+
+&::after{
+    display: block;
+content: "";
+position: relative;
+bottom: -12px;
+left: 0;
+width: 299px;
+height: 3px;
+background-color: $bgBtnRed;
+transition: width $transition-time $transition-duration;
+
+@media screen and(max-width: map-get($breakpoints, desktop)){
+    width: 150px;
+}
+}
+}
+.card:focus .card__name:after,
+.card:hover .card__name:after{
+width: 100%;
+
+}
+.card__txt1,
+.card__txt2{
+font-weight: 200; 
+
+}
+.card__txt1{
+font-size: 22px;
+
+@media screen and(max-width: map-get($breakpoints, laptop)){
+ font-size: 20px;
+line-height: 1.15;  
+}
+
+}
+.card__txt2{
+margin-top: 10px;
+font-size: 18px;
+line-height: 1.17;
+
+@media screen and(max-width: map-get($breakpoints, laptop)) {
+font-size: 16px;
+line-height: 1.19;
+}
+}

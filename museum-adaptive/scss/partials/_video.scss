@@ -1,0 +1,234 @@
+
+    .video__header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+       
+    }
+     .video__header-txt {
+        max-width: 720px;
+font-size: 22px;
+line-height: 1.73;
+@media screen and(max-width: map-get($breakpoints, desktop)-1px){
+    display: none;
+}
+    }
+
+.video__big-slide {
+    position: relative;
+    // max-width: 1440px;
+    // min-height: 735px;
+}
+
+.template-play-video--btn {
+    position: absolute;
+
+    top: 27%;
+    left: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    transform: translate(-50%);
+}
+
+
+
+.template-play-video--icon {
+    width: 220px;
+    height: 220px;
+
+    fill: $bgWhite;
+    transition: fill $transition-time $transition-duration;
+
+    .template-play-video--btn:hover & {
+        fill: rgb(145, 144, 144);
+    }
+
+    @media screen and(max-width: map-get($breakpoints, desktop)) {
+        width: 152px;
+        height: 152px;
+    }
+}
+
+.progress__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    padding: 0 30px;
+    width: 100%;
+    height: 85px;
+    background-color: $bgBlack;
+
+    @media screen and(max-width: map-get($breakpoints, desktop)) {
+        height: 60px;
+        padding: 0 40px;
+        column-gap: 30px;
+    }
+
+}
+
+.progress__video,
+.progress__voise {
+    background-color: #C4C4C4;
+
+    width: 100%;
+    height: 8px;
+
+    outline: none;
+    transition: background-image 450ms ease-in;
+    -webkit-appearance: none;
+
+    @media screen and(max-width: map-get($breakpoints, desktop)) {
+        height: 5px;
+    }
+}
+
+.progress__video {
+    max-width: 929px;
+    background-image: linear-gradient(to right, #710707 0%, #710707 53%, #C4C4C4 53%, #C4C4C4 100%);
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+        max-width: 564px;
+    }
+}
+
+.progress__voise {
+    max-width: 155px;
+    background-image: linear-gradient(to right, #710707 0%, #710707 40%, #C4C4C4 40%, #C4C4C4 100%);
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+        max-width: 143px;
+    }
+
+}
+
+.progress__video::-webkit-slider-thumb,
+.progress__voise::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: $bgWhite;
+}
+
+.range__btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.range-icon--play {
+    width: 23px;
+    height: 31px;
+}
+
+.range-icon--volume {
+    width: 38px;
+    height: 31px;
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+        width: 26px;
+        height: 20px;
+    }
+}
+
+.range-icon--frame {
+    width: 35px;
+    height: 35px;
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+    .video__slider{
+margin-top: 40px;
+
+        display: flex;
+        justify-content: center;
+        column-gap: 42px;
+       
+        @media screen and(max-width: map-get($breakpoints, desktop)-1px) {
+        column-gap: 41px;
+   }
+
+    }
+    .video__slide{
+        flex: 0 0 100%;
+      
+        max-width: 452px;
+       height: 254px;
+       @media screen and(max-width: map-get($breakpoints, desktop)-1px) {
+            max-width: 300px;
+                height: 170px;
+} 
+    }
+    .video__slide iframe{
+         width: 100%;
+       height: 100%;
+        border: none;      
+    }
+   
+
+
+
+
+    .video__btns-set{
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+height: 12px;
+
+    }
+ .video__btn-dot-set{
+     display: flex;
+     flex: 1 0 100%;
+     max-width: 140px;
+     justify-content: space-between;
+ }   
+    .video__btn-dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #999999;
+        transition:  background-color $transition-time $transition-duration;
+   cursor: pointer;
+    }
+    .video__btn-arrow{
+display: flex;
+justify-content: center;
+align-items: center;
+
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    
+cursor: pointer;
+    }
+    
+.video__btn-arrow-icon{
+    width: 10px;
+    height: 12px;
+    fill: #999;
+            transition: fill $transition-time $transition-duration;
+}
+
+.video__btn-dot.active,
+.video__btn-dot:hover,
+.video__btn-dot:focus{
+    background-color: #333333;
+}
+.video__btn-arrow:hover .video__btn-arrow-icon,
+.video__btn-arrow:focus .video__btn-arrow-icon{
+    fill: #333333;
+}
+

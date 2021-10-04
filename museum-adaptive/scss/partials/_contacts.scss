@@ -1,0 +1,42 @@
+.contacts__flex{
+    // padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+font-style: inherit;
+}
+.address__name{
+font-weight: 500;
+font-size: 28px;
+line-height: 1.18;
+
+@media screen and(max-width: map-get($breakpoints, desktop)-1) {
+font-size: 24px;
+line-height: 1.16;
+}
+}
+.address__link--margin-t{
+margin-top: 50px;
+
+@media screen and(max-width: map-get($breakpoints, desktop)-1) {
+    margin-top: 35px;
+}
+}
+.address__link{
+    display: block;
+font-size: 22px;
+line-height: 1.18;
+
+@media screen and(max-width: map-get($breakpoints, desktop)-1) {
+    font-size: 20px;
+line-height: 1.15;
+}
+
+}
+.address__link:not(:last-child){
+    margin-bottom: 25px;
+    @media screen and(max-width: map-get($breakpoints, desktop)-1) {
+    margin-bottom: 15px;
+}
+}
