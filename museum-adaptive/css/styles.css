@@ -2205,6 +2205,8 @@ img {
 @media screen and (max-width: 420px) {
   .footer__nav-list {
     max-width: 380px;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
   }
 }
 

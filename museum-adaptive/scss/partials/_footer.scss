@@ -85,6 +85,7 @@ line-height: 21px;
 }
  @media screen and(max-width: map-get($breakpoints, mobile)) {
      max-width: 380px;
+     column-gap: 50px;
  }
 }
 .footer__nav-item{
