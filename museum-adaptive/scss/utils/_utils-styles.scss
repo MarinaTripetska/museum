@@ -7,7 +7,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-        outline: solid 1px tomato;
+        // outline: solid 1px tomato;
 }
 
 body {
@@ -45,6 +45,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0;
 }
 .visually-hidden {
     position: absolute !important;
@@ -113,8 +114,12 @@ line-height: 1.5;
 }
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     font-size: 40px;
-    
+  }
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    font-size: 28px;
+line-height: 1.43;
 }
+  
 }
 .section-title--white-bg{
 color: $txtGold;

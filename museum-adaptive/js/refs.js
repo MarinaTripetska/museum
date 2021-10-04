@@ -20,6 +20,9 @@ wlcSecModalCloseBtn:  document.querySelector('[data-modal-close-btn]'),
 
     visitingSectionList: document.querySelector('.visiting__list'),
 
+
+exploreSecProgressImg: document.querySelector('.explore__range'),
+
     videoSecProgressVideo: document.querySelector('.progress__video'),
     videoSecProgressVoise: document.querySelector('.progress__voise'),
 

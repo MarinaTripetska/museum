@@ -156,6 +156,17 @@ line-height: 1.73;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
     .video__slider{
 margin-top: 40px;
 
@@ -166,6 +177,10 @@ margin-top: 40px;
         @media screen and(max-width: map-get($breakpoints, desktop)-1px) {
         column-gap: 41px;
    }
+     
+  @media screen and(max-width: map-get($breakpoints, laptop)-1px) {
+    column-gap: 20px;
+}
 
     }
     .video__slide{
@@ -177,6 +192,14 @@ margin-top: 40px;
             max-width: 300px;
                 height: 170px;
 } 
+@media screen and(max-width: map-get($breakpoints, laptop)-1px) {
+    max-width: 354px;
+    height: 199px;
+}
+@media screen and(max-width: map-get($breakpoints, tablet)-1) {
+    max-width: 180px;
+    height: 101px;
+}
     }
     .slide3{
         @media screen and(max-width: map-get($breakpoints, laptop)-1) {
@@ -196,11 +219,17 @@ margin-top: 40px;
     .video__btns-set{
 display: flex;
 justify-content: space-between;
+align-items: center;
 margin-top: 40px;
 margin-left: auto;
 margin-right: auto;
 width: 200px;
-height: 12px;
+height: 12px;  
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+      width: 174px;
+      
+
+  }
 
     }
  .video__btn-dot-set{
@@ -208,6 +237,12 @@ height: 12px;
      flex: 1 0 100%;
      max-width: 140px;
      justify-content: space-between;
+      @media screen and(max-width: map-get($breakpoints, mobile)) {
+     max-width: 120px;
+
+
+ }
+   
  }   
     .video__btn-dot{
         width: 12px;
@@ -216,6 +251,12 @@ height: 12px;
         background-color: #999999;
         transition:  background-color $transition-time $transition-duration;
    cursor: pointer;
+
+   @media screen and(max-width: map-get($breakpoints, mobile)) {
+    width: 8px;
+ height: 8px;
+
+}
     }
     .video__btn-arrow{
 display: flex;

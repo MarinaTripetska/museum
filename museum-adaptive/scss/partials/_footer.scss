@@ -47,6 +47,9 @@ height: 50px;
        margin-right: 35px;
 
    }
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+    max-width: 380px;
+ }
 }
 .footer__nav-list{
     margin-left: 145px;
@@ -70,12 +73,6 @@ font-size: 22px;
 letter-spacing: 2px;
 color: $txtWhite;
 
-
-
-
-
-
-
 @media screen and(max-width: map-get($breakpoints, desktop)-50) {
     margin-left: 45px;
     column-gap: 100px;
@@ -86,6 +83,9 @@ color: $txtWhite;
     font-size: 18px;
 line-height: 21px;
 }
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+     max-width: 380px;
+ }
 }
 .footer__nav-item{
     width: 106px;

@@ -6,6 +6,10 @@
 
     min-height: 585px;
  }
+   @media screen and(max-width: map-get($breakpoints, tablet)) {
+
+      min-height: 100%;
+  }
     }
 
 .welcome__flex-box{
@@ -64,6 +68,10 @@ letter-spacing: 2px;
     font-size: 20px;
 line-height: 1.15;
 text-align: center;
+}
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    font-size: 16px;
+line-height: 1.19;
 }
 }
 
@@ -181,8 +189,14 @@ min-height: 465px;
      flex-direction: column;
      margin-top: 50px;
 max-width: 728px;
-min-height: 546px;
+min-height: 100%;
  }
+//  @media screen and(max-width: map-get($breakpoints, mobile)){
+// min-height: 100%;
+//  }
+
+
+
 }
 
 
@@ -231,8 +245,16 @@ width: 100%;
       position: static; 
        max-width: 100%;
        padding: 0 164px;
+
+       justify-content: center;
+
     
     }
+     @media screen and(max-width: map-get($breakpoints, tablet)-50) {
+        min-height: 80px; 
+        padding: 0 75px;
+        column-gap: 25px;
+     }
 }
 .navigation-num__box{
 width: 76px;
@@ -241,6 +263,9 @@ justify-content: space-between;
 align-items: center;
 @media screen and(max-width: map-get($breakpoints, laptop)) {
      width: 71px;
+}
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    width: 50px;
 }
 }
 
@@ -255,6 +280,11 @@ line-height: 1.82;
 font-size: 20px;
 line-height: 2;
  }
+
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+font-size: 16px;
+line-height: 2.5;
+  }
 }
 
 .dot-set{
@@ -265,9 +295,10 @@ justify-content: space-between;
 
  @media screen and(max-width: map-get($breakpoints, laptop)) {
      max-width: 160px;
-     
-
- }
+      }
+      @media screen and(max-width: map-get($breakpoints, mobile)) {
+    max-width: 75px;
+}
 }
 .dot{
     width: 16px;
@@ -280,6 +311,10 @@ justify-content: space-between;
     height: 12px;
 
  }
+  @media screen and(max-width: map-get($breakpoints, tablet)-200) {
+width: 7px;
+height: 7px;
+}
 }
 .dot.active,
 .dot:hover{
@@ -297,12 +332,14 @@ justify-content: space-between;
  @media screen and(max-width: map-get($breakpoints, laptop)) {
      max-width: 80px;
       }
-
+ @media screen and(max-width: map-get($breakpoints, tablet)-100){
+     max-width: 55px;
+ }
 }
 
 .btn-prev,
 .btn-next{
-     width: 35px;
+    //  width: 35px;
      height: 15px;
 
      display: flex; 
@@ -319,6 +356,9 @@ justify-content: space-between;
     height: 8px;
     fill: white;
     transition: fill $transition-time $transition-duration;
+    @media screen and(max-width: map-get($breakpoints, tablet)-100) {
+width: 20px;
+    }
 }
 .btn-prev:hover .btn-arrow-icon,
 .btn-next:hover .btn-arrow-icon,

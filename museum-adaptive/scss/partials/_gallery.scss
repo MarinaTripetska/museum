@@ -11,6 +11,10 @@
      max-height: 1080px;
 
  }
+      @media screen and(max-width: map-get($breakpoints, mobile)) {
+         max-height: 637px;
+
+     }
 
 }
 .gallery__gradient{

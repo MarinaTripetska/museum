@@ -3,6 +3,10 @@
      height: 110px;
      overflow-x: hidden;
  }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+     height: 90px;
+     
+ }
 }
 .header-container{
     display: flex;
@@ -20,20 +24,36 @@ height: 150px;
     background-color: $bgBlack;
     z-index: 1000;
 }   
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+     height: 90px;
+     
+ }
 
 }
 .header__logo{
 width: 199px;
 height: 33px;
+
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+    width: 189px;
+ }
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    width: 199px;
+}
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    width: 131px;
+    height: 20px;
+}
+
 }
 
 .logo{
     display: flex;
     justify-content: space-between;
 align-items: center;
-   
-&__txt{
-        margin-left: 25px;
+}
+.logo__txt{
+        // margin-left: 25px;
     font-family: $headingFont;
     font-weight: 400;
     font-size: 28px;
@@ -41,8 +61,22 @@ align-items: center;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: $txtWhite;
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    
+  font-size: 16px;
+line-height: 18px;
     
 }
+}
+
+.header__logo-img{
+     width:29px;
+     height:16px;
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    max-width: 1024px;
+
+}
+
 }
 .header__logo-txt{
     position: relative;
@@ -72,7 +106,10 @@ align-items: center;
 
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     top: 110px;
-//  max-width: 100vw;
+
+}
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    top: 90px;
 }
 }
 .nav__list{
@@ -162,12 +199,16 @@ height: 25px;
 }
 .burger-icon{
 display: none;
+width: 32px;
+height: 18px;
 }
 .burger-icon.active{
     display: block;
 }
 
 .cross-icon{
+    width: 25px;
+height: 25px;
     display: none;
 
 }

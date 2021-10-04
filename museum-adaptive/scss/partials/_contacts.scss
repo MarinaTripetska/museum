@@ -21,16 +21,18 @@ line-height: 1.18;
 @media screen and(max-width: map-get($breakpoints, desktop)-1) {
 font-size: 24px;
 line-height: 1.16;
-
+}
   @media screen and(max-width: map-get($breakpoints, laptop)-1) {
-    
-font-size: 20px;
+  font-size: 20px;
 line-height: 1.15;
 }
-  }
-
-
+ @media screen and(max-width: map-get($breakpoints, mobile)){
+  font-size: 16px;
+line-height: 1.19;
 }
+}
+
+
 .address__link--margin-t{
 margin-top: 50px;
 
@@ -55,6 +57,14 @@ line-height: 1.15;
 font-size: 18px;
 line-height: 1.17;
   }
+
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+
+font-size: 16px;
+line-height: 1.19;
+ }
+  
+
 
 }
 .address__link:not(:last-child){

@@ -15,26 +15,41 @@ column-gap: 60px;
       row-gap: 40px;
       column-gap: 56px;
   }
+  @media screen and(max-width: 550px) {
+    row-gap: 20px;
+    column-gap: 30px;
+}
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    padding: 0 50px;
+   row-gap: 40px;
+}
+@media screen and(max-width: 390px) {
+    padding: 0;
+}
 }
 .visiting__item{
  width: calc(33.3% - 60px);
 
  @media screen and(max-width: map-get($breakpoints, laptop)) {
     width: calc(50% - 54px);
-    max-width: 330px;
+    // max-width: 330px;
     
  }
   @media screen and(max-width: map-get($breakpoints, tablet)) {
      width: calc(50% - 28px);
-     max-width: 280px;
+    //  max-width: 280px;
+
+ }
+   @media screen and(max-width: 550px) {
+     width: calc(50% - 15px);
+    
+  }
+   @media screen and(max-width: map-get($breakpoints, mobile)) {
+     width: 100%;
 
  }
 
 }
-// .card{
-//     display: inline-flex;
-//    flex-wrap: wrap;
-// }
 .card__name{
     font-family: Forum;
 font-weight:400;
@@ -57,6 +72,12 @@ letter-spacing: 3px;
 font-size: 22px;
 line-height: 1.09;
 }
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    font-size: 18px;
+line-height: 1.11;
+letter-spacing: 5px;
+}
+
 
 
 &::after{
@@ -99,6 +120,11 @@ line-height: 1.15;
 font-size: 18px;
 line-height: 1.17;
 }
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    font-size: 16px;
+line-height: 1.19;
+}
+
 }
 .card__txt2{
 margin-top: 10px;
@@ -112,4 +138,5 @@ line-height: 1.19;
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     font-size: 16px;
 }
+
 }
