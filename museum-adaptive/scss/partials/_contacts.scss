@@ -2,9 +2,16 @@
     // padding-top: 6px;
     display: flex;
     justify-content: space-between;
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+     flex-wrap: wrap;
+
+ }
 }
 .address{
 font-style: inherit;
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+margin-bottom: 40px;
+}
 }
 .address__name{
 font-weight: 500;
@@ -14,13 +21,24 @@ line-height: 1.18;
 @media screen and(max-width: map-get($breakpoints, desktop)-1) {
 font-size: 24px;
 line-height: 1.16;
+
+  @media screen and(max-width: map-get($breakpoints, laptop)-1) {
+    
+font-size: 20px;
+line-height: 1.15;
 }
+  }
+
+
 }
 .address__link--margin-t{
 margin-top: 50px;
 
 @media screen and(max-width: map-get($breakpoints, desktop)-1) {
     margin-top: 35px;
+}
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 40px;
 }
 }
 .address__link{
@@ -32,6 +50,11 @@ line-height: 1.18;
     font-size: 20px;
 line-height: 1.15;
 }
+  @media screen and(max-width: map-get($breakpoints, laptop)-1) {
+    
+font-size: 18px;
+line-height: 1.17;
+  }
 
 }
 .address__link:not(:last-child){

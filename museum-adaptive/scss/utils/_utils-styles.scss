@@ -67,7 +67,19 @@ img {
        max-width: 1440px; 
        padding: 0;
     }
-    
+     @media screen and(max-width: map-get($breakpoints, laptop)) {
+max-width: 1024px;
+
+     }
+      @media screen and(max-width: map-get($breakpoints, tablet)) {
+     max-width: 768px;
+
+ }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+     max-width: 420px;
+
+ }
+
 }
 .section{
 background-color: $bgWhite;
@@ -75,7 +87,9 @@ padding: 75px 0;
 @media screen and(max-width: map-get($breakpoints, laptop)) {
     padding: 60px 0;
 }
-// color: $txtBlack;
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+    padding: 40px 0;
+}
 }
 .section-dark{
     background-color: $bgBlack;
@@ -97,7 +111,10 @@ text-transform: uppercase;
     font-size: 50px;
 line-height: 1.5;
 }
-
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    font-size: 40px;
+    
+}
 }
 .section-title--white-bg{
 color: $txtGold;
@@ -121,6 +138,9 @@ color: $txtGold;
      @media screen and(max-width: map-get($breakpoints, laptop)) {
      margin-top: 60px;
  }
+   @media screen and(max-width: map-get($breakpoints, tablet)) {
+       margin-top: 40px;
+  }
 }
 .panorama-box{
     width: 100vw;

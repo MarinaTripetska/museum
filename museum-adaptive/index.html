@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="section-dark">
+    <header class="section-dark header">
       <div class="container header-container">
         <a class="logo header__logo link" href="./index.html">
           <img src="./assets/svg/logo.svg" alt="logo" width="49" height="26" />
@@ -64,10 +64,10 @@
     </header>
     <main>
       <section id="welcome" class="welcome section-dark">
-        <div class="container flex-container">
+        <div class="container welcome__flex-box">
           <div class="welcome__txt-box">
             <h1 class="visually-hidden">Louvre Museum</h1>
-            <h2 class="section-title">
+            <h2 class="section-title section-title--welcome">
               Welcome <br />
               to the Louvre
             </h2>
@@ -185,7 +185,6 @@
               class="explore__img"
               src="./assets/img/explore/before-small.jpg"
               alt="art before restoration"
-              width="440"
             />
             <svg class="explore-slider-dash">
               <use href="./assets/svg/sprite.svg#explore-slider-dash"></use>
@@ -209,8 +208,6 @@
               class="template-main-video"
               src="./assets/template-main-video.jpg"
               alt="main video template"
-              width="1440"
-              height="650"
             />
             <button class="template-play-video--btn">
               <svg class="template-play-video--icon">
@@ -253,13 +250,6 @@
               </button>
             </div>
           </div>
-          <!-- <iframe
-            srcdoc="<a href='https://www.youtube-nocookie.com/embed/zp1BXPX8jcU'>
-              <img width=100% height=100% src='./assets/video-template1.jpg' alt=''></a>"
-            title="YouTube video player"
-            allow="autoplay"
-            allowfullscreen
-          ></iframe> -->
 
           <ul class="list video__slider">
             <li class="video__slide">
@@ -296,7 +286,7 @@
                 allowfullscreen
               ></iframe>
             </li>
-            <li class="video__slide">
+            <li class="video__slide slide3">
               <iframe
                 srcdoc="<style>
                   html, body, a, img {display: block; width: 100%; height: 100%; margin: 0; padding: 0;}a:before, a:after {position: absolute; content: '';
@@ -367,12 +357,21 @@
             <picture class="tickets-img">
               <source
                 srcset="
+                  ./assets/img/tickets-img-tablet-1x.jpg 1x,
+                  ./assets/img/tickets-img-tablet-2x.jpg 2x
+                "
+                media="(max-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
                   ./assets/img/tickets-img-laptop-1x.jpg 1x,
                   ./assets/img/tickets-img-laptop-2x.jpg 2x
                 "
-                media="(max-width: 1420px)"
+                media="(max-width: 1024px)"
                 type="image/jpeg"
               />
+
               <img src="./assets/img/tickets-sec-img.jpg" alt="picture" />
             </picture>
             <form class="form-buy-ticket tickets__flex">
@@ -542,6 +541,14 @@
               >
             </address>
             <picture>
+              <source
+                srcset="
+                  ./assets/img/map-tablet.png    1x,
+                  ./assets/img/map-tablet@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width:768px)"
+              />
               <source
                 srcset="
                   ./assets/img/map-laptop.png    1x,

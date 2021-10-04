@@ -1,6 +1,6 @@
 .welcome{    
      min-height: 810px;
-     overflow-x: hidden;
+    //  overflow-x: hidden;
 
      @media screen and(max-width: map-get($breakpoints, laptop)) {
 
@@ -8,10 +8,15 @@
  }
     }
 
-.flex-container{
+.welcome__flex-box{
     display: flex;
     justify-content: space-between;
     position: relative;
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+
+     flex-direction: column;
+ }
+
 }
 .welcome__txt-box{
     padding-top: 150px;
@@ -21,7 +26,8 @@
     min-height: 750px;
     background-image: linear-gradient(90deg, #070707 73%, rgba(0, 0, 0, 0));
 
-   @media screen and(max-width: map-get($breakpoints, laptop)) {
+   @media screen and
+   (min-width:map-get($breakpoints, tablet)+1) and(max-width: map-get($breakpoints, laptop)) {
 
       padding-top: 50px;
          min-height: 585px;
@@ -31,6 +37,17 @@ transition: opacity $transition-time $transition-duration;
            opacity: 0;
         }
    }
+    @media screen and(max-width: map-get($breakpoints, tablet)){
+      padding-top:0;  
+      min-height: auto;
+    }
+}
+.section-title--welcome{
+     @media screen and(max-width: map-get($breakpoints, laptop)) {
+
+text-align: center;
+
+     }
 }
 .welcome__txt{
 margin-top: 28px;
@@ -42,6 +59,12 @@ letter-spacing: 2px;
        font-size: 24px;
        line-height: 1.17;
    }
+   @media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 25px;
+    font-size: 20px;
+line-height: 1.15;
+text-align: center;
+}
 }
 
 .welcome__btn{
@@ -82,6 +105,9 @@ margin-top: 50px;
 line-height: 1.15;
 
   }
+   @media screen and(max-width: map-get($breakpoints, tablet)) {
+     display: none;
+ }
 }
 
 .modal__backdrop{
@@ -134,12 +160,8 @@ line-height: 1.15;
 }
 
 
-
-
-
-
 .welcome__slider-wraper{
-    flex: 2 0;
+    flex: 1 0;
 
     display: flex;
 position: absolute;
@@ -153,6 +175,13 @@ z-index: 1;
      max-width: 700px;
 min-height: 465px;
    
+ }
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+     position: static;
+     flex-direction: column;
+     margin-top: 50px;
+max-width: 728px;
+min-height: 546px;
  }
 }
 
@@ -169,6 +198,8 @@ width: 100%;
     width: 100%;
     height: 100%;
 }
+
+
 .navigation-set-wraper{
     display: flex;
     justify-content: space-between;
@@ -195,6 +226,13 @@ width: 100%;
      column-gap: 45px;
      
  }
+      @media screen and(max-width: map-get($breakpoints, tablet)) {
+      min-height: 100px;
+      position: static; 
+       max-width: 100%;
+       padding: 0 164px;
+    
+    }
 }
 .navigation-num__box{
 width: 76px;

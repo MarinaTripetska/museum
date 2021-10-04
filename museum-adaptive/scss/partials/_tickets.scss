@@ -10,14 +10,20 @@
      column-gap: 80px;
 
   }
-}
-.tickets-img{
-    flex: 1 1 100%;
-    max-width: 720px;
-    @media screen and(max-width: map-get($breakpoints, desktop)-20) {
-max-width: 700px;
+    @media screen and(max-width: map-get($breakpoints, tablet)) {
+      justify-content: flex-start;
+      column-gap: 60px;
 
-    }
+  }
+}
+.tickets-img > img{
+    flex: 1 1 100%;
+    margin: 0;
+//     max-width: 720px;
+//     @media screen and(max-width: map-get($breakpoints, desktop)-20) {
+// max-width: 700px;
+
+//     }
 }
 .ticket-type__column{
     display: flex;
@@ -144,7 +150,6 @@ align-items: flex-start;
 // }
 .num__age{
    font-size: 22px;
-
 }
 .num__count{
     margin-top: 15px;

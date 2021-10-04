@@ -3,20 +3,33 @@
     max-height: 1960px;
     overflow-y: hidden;
 
+         @media screen and(max-width: map-get($breakpoints, laptop)) {
+      max-height: 1265px;
+      
+        }
+         @media screen and(max-width: map-get($breakpoints, tablet)) {
+     max-height: 1080px;
+
+ }
+
 }
-// .gallery__gradient{
-//    position: absolute;
-//    bottom: 0; 
-//    height: 100%;
-//    width: 100%;
-//     z-index: 1;
-//    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(2, 1, 1, 1.0));
-// }
+.gallery__gradient{
+   position: absolute;
+   bottom: 0; 
+   height: 100%;
+   width: 100%;
+    z-index: 1;
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(2, 1, 1, 1.0));
+}
 
 
 .gallery__container{
 columns: 3;
 gap: 36px;
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+columns: 2;
+gap: 24px;
+     }
 }
 .gallery__container > *{
     margin-bottom: 24px;
@@ -39,9 +52,12 @@ gap: 36px;
       flex-direction: column;
       min-height: 550px;
 justify-content: flex-end;
-     @media screen and(max-width: map-get($breakpoints, desktop) -1px) {
+     @media screen and(max-width: map-get($breakpoints, laptop)) {
     min-height: 400px;
 }
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+     min-height: 380px;
+ }
   }
 
 

@@ -9,19 +9,25 @@ column-gap: 60px;
 // overflow-x: hidden;
   @media screen and(max-width: map-get($breakpoints, laptop)) {
      row-gap:60px;
-     column-gap: 108px;
-   
-   
-    
+     column-gap: 108px;    
 }
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+      row-gap: 40px;
+      column-gap: 56px;
+  }
 }
 .visiting__item{
  width: calc(33.3% - 60px);
 
  @media screen and(max-width: map-get($breakpoints, laptop)) {
-    width: calc(50% - 108px);
+    width: calc(50% - 54px);
     max-width: 330px;
     
+ }
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+     width: calc(50% - 28px);
+     max-width: 280px;
+
  }
 
 }
@@ -41,11 +47,17 @@ margin-top: 25px;
 margin-bottom: 22px;
 
 
-@media screen and(max-width: map-get($breakpoints, desktop)){
+@media screen and(max-width: map-get($breakpoints, desktop)-1){
 font-size: 28px;
 line-height: 1.11;
 letter-spacing: 3px;
 }
+
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+font-size: 22px;
+line-height: 1.09;
+}
+
 
 &::after{
     display: block;
@@ -60,6 +72,8 @@ transition: width $transition-time $transition-duration;
 
 @media screen and(max-width: map-get($breakpoints, desktop)){
     width: 150px;
+    height: 2px;
+    bottom: -10px;
 }
 }
 }
@@ -81,6 +95,10 @@ font-size: 22px;
 line-height: 1.15;  
 }
 
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+font-size: 18px;
+line-height: 1.17;
+}
 }
 .card__txt2{
 margin-top: 10px;
@@ -90,5 +108,8 @@ line-height: 1.17;
 @media screen and(max-width: map-get($breakpoints, laptop)) {
 font-size: 16px;
 line-height: 1.19;
+}
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    font-size: 16px;
 }
 }

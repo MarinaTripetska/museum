@@ -1,14 +1,31 @@
 .footer{
     padding-top: 75px;
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+    padding-top: 65px;
+
+}
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+      padding-top: 40px;
+
+  }
     
 }
 .footer__top{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    // height: 100%;
-    height: 188px;
-    // border-bottom: solid 3px #666666;
+    padding-bottom: 50px;
+        min-height: 188px;
+         @media screen and(max-width: map-get($breakpoints, laptop)) {
+            
+
+ }
+         @media screen and(max-width: 985px) {
+     flex-wrap: wrap;
+     padding-bottom: 40px;
+min-height: 250px;
+ }
+   
 }
 .footer__logo{
 // position: relative;
@@ -26,6 +43,10 @@ height: 50px;
        width: 100%;
    max-width: 363px;
    max-height: 128px;
+      @media screen and(max-width: 985px) {
+       margin-right: 35px;
+
+   }
 }
 .footer__nav-list{
     margin-left: 145px;
@@ -50,11 +71,21 @@ letter-spacing: 2px;
 color: $txtWhite;
 
 
+
+
+
+
+
 @media screen and(max-width: map-get($breakpoints, desktop)-50) {
     margin-left: 45px;
     column-gap: 100px;
 }
-
+@media screen and(max-width: 985px) {
+ margin-left: 99px;
+ column-gap: 184px;
+    font-size: 18px;
+line-height: 21px;
+}
 }
 .footer__nav-item{
     width: 106px;
@@ -83,6 +114,10 @@ margin-left: auto;
     align-self: center;
     width: 100%;
     max-width: 340px;
+          @media screen and(max-width: 985px) {
+          margin-top: 42px;
+
+      }
 }
 .social-item{
     width: 48px;
@@ -116,11 +151,18 @@ margin-left: auto;
   fill: $txtGold;
 }
 
+
+
+
+
+
 .footer__underline{
     border-bottom: solid 3px #666666;
 }
+
+
 .footer-bottom{
-    height: 124px;
+    min-height: 124px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,4 +173,9 @@ line-height: 1;
 letter-spacing: 2px;
 
 color: $txtWhite;
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+      min-height: 102px;
+
+  }
+
 }
