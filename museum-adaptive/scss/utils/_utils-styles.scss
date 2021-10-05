@@ -158,6 +158,33 @@ color: $txtGold;
     height: 100%;
 }
 
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__txt {
+    font-family: $headingFont;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.11;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $txtWhite;
+
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+
+        font-size: 16px;
+        line-height: 1.12;
+
+    }
+}
+
+
+
 .social-list{
     // display: flex;
 justify-content: space-between;

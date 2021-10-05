@@ -2,69 +2,46 @@
     padding-top: 75px;
     @media screen and(max-width: map-get($breakpoints, laptop)) {
     padding-top: 65px;
-
 }
   @media screen and(max-width: map-get($breakpoints, tablet)) {
       padding-top: 40px;
-
-  }
-    
+  }    
 }
+
 .footer__top{
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 50px;
-        min-height: 188px;
-         @media screen and(max-width: map-get($breakpoints, laptop)) {
-            
 
- }
-         @media screen and(max-width: 985px) {
+    @media screen and(max-width: 985px) {
      flex-wrap: wrap;
      padding-bottom: 40px;
-min-height: 250px;
  }
    
 }
 .footer__logo{
-// position: relative;
-// bottom: 5px;
 width: 195px;
-height: 50px;
+margin-right: 145px;
+   @media screen and(max-width: 1150px) {
+height: auto;
+margin-right: 45px;
 }
-// .footer__logo-txt {
-//     position: relative;
-//     top: 4px;
-// }
+@media screen and(max-width: 1150px) {   
+    margin-right: 99px;
+}
+}
 .footer__nav{
-    position: relative;
-    top: 12px;
-       width: 100%;
-   max-width: 363px;
+   max-width: 367px;
    max-height: 128px;
-      @media screen and(max-width: 985px) {
-       margin-right: 35px;
-
-   }
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+     max-width: 340px;
+ }
     @media screen and(max-width: map-get($breakpoints, mobile)) {
     max-width: 380px;
  }
 }
 .footer__nav-list{
-    margin-left: 145px;
-    flex: 1 0 100%;
-   
-max-width: 363px;
-max-height: 128px;
-
-
-    display: flex;
-    flex-direction: column;
-   align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 25px;
+    columns: 2;
     column-gap: 150px;
 
 
@@ -74,25 +51,22 @@ letter-spacing: 2px;
 color: $txtWhite;
 
 @media screen and(max-width: map-get($breakpoints, desktop)-50) {
-    margin-left: 45px;
-    column-gap: 100px;
+     column-gap: 100px;
 }
 @media screen and(max-width: 985px) {
- margin-left: 99px;
- column-gap: 184px;
+    column-gap: 184px;
+
     font-size: 18px;
-line-height: 21px;
+    line-height: 21px;
 }
  @media screen and(max-width: map-get($breakpoints, mobile)) {
-     max-width: 380px;
      column-gap: 50px;
  }
 }
 .footer__nav-item{
-    width: 106px;
+    margin-bottom: 25px;
 }
 .footer__nav-link{
-    padding: 10px 0;
     transition: color 300ms linear;
 
 &:hover,
@@ -104,11 +78,14 @@ line-height: 21px;
     color: $txtGoldDark;
 }
 }
+
+
+
 .footer__social-list{
-position: relative;
-top: 15px;
+   margin-left: auto;
  display: flex;
- align-self: center;
+ 
+ align-self: flex-end;
  max-width: 340px;
   @media screen and(max-width: 985px) {
           margin-top: 42px;
@@ -127,11 +104,13 @@ top: 15px;
 }
 
 
+
+
 .footer-bottom{
-    min-height: 124px;
+    padding: 50px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 
     font-weight: 200;
 font-size: 22px;
@@ -139,9 +118,4 @@ line-height: 1;
 letter-spacing: 2px;
 
 color: $txtWhite;
-  @media screen and(max-width: map-get($breakpoints, tablet)) {
-      min-height: 102px;
-
-  }
-
 }

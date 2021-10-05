@@ -41,6 +41,7 @@ height: 33px;
  }
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     width: 199px;
+    line-height: 1.78;
 }
 @media screen and(max-width: map-get($breakpoints, mobile)) {
     width: 131px;
@@ -49,32 +50,6 @@ height: 33px;
 
 }
 
-.logo{
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-}
-.logo__txt{
-        // margin-left: 25px;
-    font-family: $headingFont;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.11; 
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: $txtWhite;
-    @media screen and(max-width: map-get($breakpoints, tablet)) {
-line-height: 1.78;
-
-
-}
-@media screen and(max-width: map-get($breakpoints, mobile)) {
-    
-  font-size: 16px;
-line-height: 1.12;
-    
-}
-}
 
 .header__logo-img{
      width:49px;
@@ -84,16 +59,16 @@ height:26px;
 width:29px;
      height:16px;
 }
-
 }
 .header__logo-txt{
     position: relative;
     top: 3px;
 }
+
+
 .nav{
 @media screen and (max-width: map-get($breakpoints, laptop)) {
     position: absolute;
-    // display: block;
     top: 130px;
     left: -300px;
     max-width: 297px;
