@@ -283,21 +283,28 @@ img {
   color: #FFF;
 }
 
+@media screen and (max-width: 768px) {
+  .logo__txt {
+    line-height: 1.78;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .logo__txt {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.12;
   }
 }
 
 .header__logo-img {
-  width: 29px;
-  height: 16px;
+  width: 49px;
+  height: 26px;
 }
 
 @media screen and (max-width: 420px) {
   .header__logo-img {
-    max-width: 1024px;
+    width: 29px;
+    height: 16px;
   }
 }
 

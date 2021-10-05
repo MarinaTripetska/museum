@@ -61,20 +61,26 @@ align-items: center;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: $txtWhite;
+    @media screen and(max-width: map-get($breakpoints, tablet)) {
+line-height: 1.78;
+
+
+}
 @media screen and(max-width: map-get($breakpoints, mobile)) {
     
   font-size: 16px;
-line-height: 18px;
+line-height: 1.12;
     
 }
 }
 
 .header__logo-img{
-     width:29px;
-     height:16px;
+     width:49px;
+height:26px;
 @media screen and(max-width: map-get($breakpoints, mobile)) {
-    max-width: 1024px;
-
+    
+width:29px;
+     height:16px;
 }
 
 }
