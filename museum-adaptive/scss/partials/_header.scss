@@ -1,7 +1,9 @@
 .header{
  @media screen and(max-width: map-get($breakpoints, tablet)) {
      height: 110px;
-     overflow-x: hidden;
+    //  overflow-x: hidden;
+
+    
  }
   @media screen and(max-width: map-get($breakpoints, mobile)) {
      height: 90px;
@@ -20,7 +22,7 @@ height: 150px;
 }
  @media screen and(max-width: map-get($breakpoints, tablet)) {
     height: 110px;
-    position: fixed;
+    // position: fixed;
     background-color: $bgBlack;
     z-index: 1000;
 }   
@@ -91,6 +93,7 @@ width:29px;
 .nav{
 @media screen and (max-width: map-get($breakpoints, laptop)) {
     position: absolute;
+    // display: block;
     top: 130px;
     left: -300px;
     max-width: 297px;
@@ -98,30 +101,106 @@ width:29px;
     height: 500px;
     padding: 35px 55px;
     background-color: $bgBlack;
-        // background-image: linear-gradient(90deg, #070707 73%, rgba(0, 0, 0, 0));
+       
     z-index: 1000;
     opacity: 0;
-    transition: left 300ms $transition-duration,
+    transition: left 500ms $transition-duration,
     opacity 300ms $transition-duration;
     &.is-open{
         left:0px;
         opacity: 1;
+       
+        
     }
 }
 
 
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     top: 110px;
-
+left: -100%;
+    max-width: 100vw;
+    height: auto;
+    
 }
 @media screen and(max-width: map-get($breakpoints, mobile)) {
     top: 90px;
 }
 }
+.nav__img-set{
+    position: relative;
+    margin-top: 35px;
+    display: none;
+   @media screen and(max-width: map-get($breakpoints, tablet)) {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    //  grid-template-rows: repeat(2, 1fr);
+     place-items: center;
+     column-gap: 20px;
+     grid-template-areas: 
+     "A A"
+     "B C";
+
+
+     &::after{
+         content: "";
+         display: inline-block;
+         position: absolute;
+         bottom: -35px;
+         width: 100%;
+         height: 1px;
+         background-color: rgba(255, 255, 255, 0.5);
+     }
+     }  
+     @media screen and(max-width: map-get($breakpoints, mobile)){
+grid-template-columns: repeat(3, 1fr);
+ column-gap: 12px;
+        grid-template-areas:
+ "B A C";
+ height: 95px;
+
+ &::after{
+     bottom: -20px;
+ }
+
+     }
+    }
+
+    .nav__img{
+    width: 100%;
+    height: 100%;
+    }
+.nav__img1{
+grid-area: A;
+margin-bottom: 20px;
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+     margin-bottom: 0;
+     }
+}
+.nav__img2{
+grid-area: B;
+}
+.nav__img3{
+grid-area: C;
+}
+
+.header__social-list{
+    display: none;
+       @media screen and(max-width: map-get($breakpoints, tablet)) {
+           display: flex;
+           margin: 70px auto 0 auto;
+           max-width: 340px;
+       }
+       @media screen and(max-width: map-get($breakpoints, mobile)){
+           margin-top: 40px;
+           max-width: 260px;
+       }
+    
+}
+
+
+
 .nav__list{
-    // position: relative;
-    // right: 6px;
-   display: flex; 
+    display: flex; 
    align-items: center;
 
    color: $txtWhite;
@@ -166,7 +245,7 @@ margin-bottom: 25px;
         color: $txtGoldDark;
     }
     @media screen and(max-width: map-get($breakpoints, laptop )){
-          padding: 10px 0;
+          padding: 0;
         width: 122px;
         display: flex;
         justify-content: space-between;

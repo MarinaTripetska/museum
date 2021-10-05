@@ -58,6 +58,127 @@
               <a class="nav__link link" href="#contacts">Contacts</a>
             </li>
           </ul>
+          <div class="nav__img-set">
+            <picture class="nav__img nav__img1">
+              <source
+                srcset="
+                  ./assets/img/header/header-menu1-mobile@1x.jpg 1x,
+                  ./assets/img/header/header-menu1-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:420px)"
+              />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu1@1x.jpg 1x,
+                  ./assets/img/header/header-menu1@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:768px)"
+              />
+              <img src="./assets/img/header/header-menu1@1x.jpg" alt="" />
+            </picture>
+
+            <picture class="nav__img nav__img2">
+              <source
+                srcset="
+                  ./assets/img/header/header-menu2-mobile@1x.jpg 1x,
+                  ./assets/img/header/header-menu2-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:420px)" />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu2@1x.jpg 1x,
+                  ./assets/img/header/header-menu2@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:768px)" />
+              <img src="./assets/img/header/header-menu2@1x.jpg" alt=""
+            /></picture>
+
+            <picture class="nav__img nav__img3">
+              <source
+                srcset="
+                  ./assets/img/header/header-menu3-mobile@1x.jpg 1x,
+                  ./assets/img/header/header-menu3-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:420px)" />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu3@1x.jpg 1x,
+                  ./assets/img/header/header-menu3@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width:768px)" />
+              <img src="./assets/img/header/header-menu3@1x.jpg" alt=""
+            /></picture>
+          </div>
+          <ul class="header__social-list social-list list">
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://www.youtube.com/user/louvre"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to our youtube"
+              >
+                <svg class="social-icon">
+                  <use href="./assets/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://www.instagram.com/museelouvre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to our instagram"
+              >
+                <svg class="social-icon">
+                  <use href="./assets/svg/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://www.facebook.com/museedulouvre"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to our facebook"
+              >
+                <svg class="social-icon">
+                  <use href="./assets/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="http://twitter.com/museelouvre"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to our twitter"
+                ><svg class="social-icon">
+                  <use href="./assets/svg/sprite.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://www.pinterest.fr/museedulouvre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to our pinterest"
+                ><svg class="social-icon">
+                  <use href="./assets/svg/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
         <button class="menu-btn-switch" type="button">
           <svg class="menu-btn-switch-svg">
@@ -629,7 +750,7 @@
           </ul>
         </nav>
 
-        <ul class="footer__social-list list">
+        <ul class="social-list footer__social-list list">
           <li class="social-item">
             <a
               class="social-link link"

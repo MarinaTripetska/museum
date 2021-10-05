@@ -41,6 +41,13 @@ transition: opacity $transition-time $transition-duration;
            opacity: 0;
         }
    }
+@media screen and(max-width: 850px) {
+              background-image: linear-gradient(90deg, #070707 45%, rgba(0, 0, 0, 0));
+
+}
+
+
+
     @media screen and(max-width: map-get($breakpoints, tablet)){
       padding-top:0;  
       min-height: auto;

@@ -1,4 +1,5 @@
 export default {
+    navLinks: document.querySelectorAll('.nav__item'),
     mobileMenuBtn: document.querySelector('.menu-btn-switch'),
     mobileMenuIconBurger: document.querySelector('.burger-icon'),
     mobileMenuIconCross:document.querySelector('.cross-icon'),
