@@ -29,7 +29,7 @@ column-gap: 60px;
 }
 }
 .visiting__item{
- width: calc(33.3% - 60px);
+ width: calc(33.3% - 40px);
 
  @media screen and(max-width: map-get($breakpoints, laptop)) {
     width: calc(50% - 54px);

@@ -16,7 +16,7 @@ line-height: 1.73;
 
 .video__big-slide {
     position: relative;
-    margin-top: 60px;
+    margin-top: 70px;
 
         @media screen and(max-width: map-get($breakpoints, laptop)) {
 margin-top: 40px;
@@ -33,7 +33,7 @@ margin-top: 40px;
     background-color: transparent;
     padding: 0;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -64%);
 
 
         @media screen and(max-width: map-get($breakpoints, laptop)) {

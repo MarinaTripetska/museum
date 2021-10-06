@@ -1153,7 +1153,7 @@ img {
 }
 
 .visiting__item {
-  width: calc(33.3% - 60px);
+  width: calc(33.3% - 40px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1386,6 +1386,10 @@ img {
   color: #CAAA7D;
 }
 
+.explore__img {
+  max-width: 720px;
+}
+
 .video__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1412,7 +1416,7 @@ img {
 
 .video__big-slide {
   position: relative;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1429,8 +1433,8 @@ img {
   border: none;
   background-color: transparent;
   padding: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -64%);
+          transform: translate(-50%, -64%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -2126,6 +2130,13 @@ img {
 
 .tickets__headline--total {
   letter-spacing: 1.65px;
+  margin-top: 47px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tickets__headline--total {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2142,14 +2153,24 @@ img {
   margin-top: 25px;
 }
 
+@media screen and (max-width: 420px) {
+  .num__container--margin-t {
+    margin-top: 20px;
+  }
+}
+
+.num__container2 {
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 1024px) {
-  .num__container--margin-t:nth-child(2) {
+  .num__container2 {
     margin-top: 29px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .num__container--margin-t {
+  .num__container2 {
     margin-top: 20px;
   }
 }
@@ -2293,7 +2314,7 @@ img {
 }
 
 .footer {
-  padding-top: 75px;
+  padding-top: 84px;
 }
 
 @media screen and (max-width: 1024px) {

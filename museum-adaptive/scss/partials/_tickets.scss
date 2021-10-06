@@ -214,7 +214,11 @@ text-align: center;
 
 .tickets__headline--total{
 letter-spacing: 1.65px;
-   
+   margin-top: 47px;
+
+          @media screen and(max-width: map-get($breakpoints, laptop)) {
+                margin-top: 25px;
+          }
 }
 .total-prise{
        @media screen and(max-width: map-get($breakpoints, laptop)) {
@@ -227,15 +231,23 @@ margin-top: 50px;
 }
 .num__container--margin-t{
     margin-top: 25px;
-     @media screen and(max-width: map-get($breakpoints, laptop)) {
-&:nth-child(2){
-    margin-top: 29px;
-}
-     }
+
      @media screen and(max-width: map-get($breakpoints, mobile)) {
      margin-top: 20px;
 
  }
+}
+
+.num__container2{
+ margin-top: 15px;
+ @media screen and(max-width: map-get($breakpoints, laptop)) {
+    
+        margin-top: 29px;
+    }
+       @media screen and(max-width: map-get($breakpoints, mobile)) {
+        margin-top: 20px;
+
+    }
 }
 .tickets__btn--margin-t{
     margin-top: 60px;
