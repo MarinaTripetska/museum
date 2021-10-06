@@ -98,6 +98,14 @@ padding: 75px 0;
 }
 .section-dark--padding-t{
     padding-top: 75px;
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+    padding-top: 60px;
+}
+
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    padding-top: 40px ;
+}
 }
 
 .section-title{

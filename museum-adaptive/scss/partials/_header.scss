@@ -37,7 +37,7 @@ width: 199px;
 height: 33px;
 
  @media screen and(max-width: map-get($breakpoints, laptop)) {
-    width: 189px;
+    width: 195px;
  }
 @media screen and(max-width: map-get($breakpoints, tablet)) {
     width: 199px;
@@ -54,6 +54,9 @@ height: 33px;
 .header__logo-img{
      width:49px;
 height:26px;
+// @media screen and(max-width: map-get($breakpoints, tablet)){
+//     margin-right: 10px;
+// }
 @media screen and(max-width: map-get($breakpoints, mobile)) {
     
 width:29px;

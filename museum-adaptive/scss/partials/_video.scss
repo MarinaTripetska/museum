@@ -16,10 +16,12 @@ line-height: 1.73;
 
 .video__big-slide {
     position: relative;
-    // max-width: 1440px;
-    // min-height: 735px;
-}
+    margin-top: 60px;
 
+        @media screen and(max-width: map-get($breakpoints, laptop)) {
+margin-top: 40px;
+        }
+}
 .template-play-video--btn {
     position: absolute;
 
@@ -32,10 +34,15 @@ line-height: 1.73;
     padding: 0;
 
     transform: translate(-50%, -50%);
+
+
+        @media screen and(max-width: map-get($breakpoints, laptop)) {
+ transform: translate(-50%, -65%);
+
+        }
+
+
 }
-
-
-
 .template-play-video--icon {
     width: 220px;
     height: 220px;
@@ -122,6 +129,10 @@ line-height: 1.73;
     -webkit-appearance: none;
     cursor: ew-resize;
     background: $bgWhite;
+        @media screen and(max-width: map-get($breakpoints, laptop)) {
+            width: 13px;
+height: 13px;
+        }
 }
 
 .range__btn {

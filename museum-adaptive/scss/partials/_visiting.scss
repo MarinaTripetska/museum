@@ -9,7 +9,8 @@ column-gap: 60px;
 // overflow-x: hidden;
   @media screen and(max-width: map-get($breakpoints, laptop)) {
      row-gap:60px;
-     column-gap: 108px;    
+     column-gap: 108px;  
+     padding: 0 108px;  
 }
   @media screen and(max-width: map-get($breakpoints, tablet)) {
       row-gap: 40px;

@@ -22,13 +22,16 @@
 .footer__logo{
 width: 195px;
 margin-right: 145px;
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+      margin-right: 45px;
+  align-items: flex-start;
+    }
    @media screen and(max-width: 1150px) {
 height: auto;
-margin-right: 45px;
 }
-@media screen and(max-width: 1150px) {   
-    margin-right: 99px;
-}
+// @media screen and(max-width: 1150px) {   
+//     margin-right: 99px;
+// }
 }
 .footer__nav{
    max-width: 367px;
