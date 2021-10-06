@@ -2,6 +2,9 @@
    @media screen and(max-width: map-get($breakpoints, tablet)) {
    padding-bottom: 67px;
  }
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+  padding-bottom: 40px;
+}
 
 }
 

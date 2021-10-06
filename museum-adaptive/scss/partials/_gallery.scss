@@ -67,6 +67,10 @@ justify-content: flex-end;
      min-height: 340px;
 
  }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+     min-height: 220px;
+
+ }
   }
 
 

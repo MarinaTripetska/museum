@@ -17,6 +17,9 @@
      flex-wrap: wrap;
      padding-bottom: 40px;
  }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+     min-height: 250px;
+ }
    
 }
 .footer__logo{
@@ -35,10 +38,31 @@ height: auto;
   margin-right: 99px;
    
 }
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+     width: 131px;
+     height: 16px;
+     top:0;
+     margin-right: 0;
+}}
+.footer__logo-img{
+    width: 49px;
+height:26px;
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+     width: 29px;
+height:16px;
+ }
 }
+
+
+
+
 .footer__nav{
+    width: 100%;
    max-width: 367px;
    max-height: 128px;
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+   max-width: 313px;
+    }
  @media screen and(max-width: map-get($breakpoints, tablet)) {
      max-width: 340px;
      position: relative;
@@ -46,6 +70,8 @@ height: auto;
  }
     @media screen and(max-width: map-get($breakpoints, mobile)) {
     max-width: 380px;
+    position: relative;
+    top: 15px;
  }
 }
 .footer__nav-list{
@@ -68,11 +94,21 @@ color: $txtWhite;
     line-height: 21px;
 }
  @media screen and(max-width: map-get($breakpoints, mobile)) {
-     column-gap: 50px;
+    
+   columns: 3;
+    column-gap: 40px;
+    // row-gap: 20px;
+    width: 100%;
+    // height: 68px;
+    margin-bottom: -30px;
  }
 }
 .footer__nav-item{
     margin-bottom: 25px;
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+   margin-bottom: 30px;
+}
+
 }
 .footer__nav-link{
     transition: color 300ms linear;
@@ -99,6 +135,10 @@ color: $txtWhite;
           margin-top: 50px;
           margin-right: 90px;
       }
+        @media screen and(max-width: map-get($breakpoints, mobile )) {
+      margin: 0 auto;
+      max-width: 260px;
+  }
 }
 
 
@@ -131,4 +171,23 @@ color: $txtWhite;
  @media screen and(max-width: map-get($breakpoints, tablet)) {
      padding: 40px 20px;
  }
+
+ @media screen and(max-width: map-get($breakpoints, mobile)) {
+ font-size: 16px;
+line-height: 1.37;
+ }
+}
+.footer__nav-link2{
+     @media screen and(max-width: map-get($breakpoints, mobile)) {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px, 1px, 1px, 1px);
+padding: 0 !important;
+border: 0 !important;
+height: 1px !important;
+width: 1px !important;
+overflow: hidden;
+
+     }
+
 }

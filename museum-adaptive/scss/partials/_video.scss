@@ -2,6 +2,10 @@
      @media screen and(max-width: map-get($breakpoints, tablet)) {
     padding-bottom: 80px;
      }
+     @media screen and(max-width: map-get($breakpoints, mobile)) {
+    padding-bottom: 40px;
+    padding-top: 35px;
+}
 }
     .video__header{
 display: flex;
@@ -51,6 +55,9 @@ margin-top: 40px;
       transform: translate(-50%, -75%);
 
   }
+   @media screen and(max-width: map-get($breakpoints, mobile)) {
+       transform: translate(-50%, -100%);
+ }
 
 }
 .template-play-video--icon {
@@ -72,20 +79,25 @@ margin-top: 40px;
     width: 80px;
     height: 80px;
 }
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .progress__box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 50px;
     padding: 0 30px;
     width: 100%;
-    height: 85px;
+    min-height: 85px;
     background-color: $bgBlack;
 
     @media screen and(max-width: map-get($breakpoints, desktop)-1) {
-        height: 60px;
+        min-height: 60px;
         padding: 0 40px;
         column-gap: 30px;
     }
@@ -93,6 +105,15 @@ margin-top: 40px;
     
      padding: 0 30px;
      column-gap: 35px;
+ }
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+    min-height: 53px;
+    margin-top: 5px;
+ }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+margin-top: 4px;
+     padding: 0 20px;
+     column-gap: 30px;
  }
 }
 
@@ -102,14 +123,18 @@ margin-top: 40px;
 
     width: 100%;
     height: 8px;
-
+margin: 0;
     outline: none;
     transition: background-image 450ms ease-in;
     -webkit-appearance: none;
 
-    @media screen and(max-width: map-get($breakpoints, desktop)) {
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
         height: 5px;
     }
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+    height: 4px;
+}
+    
 }
 
 .progress__video {
@@ -119,6 +144,15 @@ margin-top: 40px;
     @media screen and(max-width: map-get($breakpoints, laptop)) {
         max-width: 564px;
     }
+        @media screen and(max-width: map-get($breakpoints, tablet)) {
+position: absolute;
+top: -5px;
+left: 0;
+max-width: 100%;
+        }
+          @media screen and(max-width: map-get($breakpoints, mobile)) {
+      top: -4px;
+  }
 }
 
 .progress__voise {
@@ -128,6 +162,9 @@ margin-top: 40px;
     @media screen and(max-width: map-get($breakpoints, laptop)) {
         max-width: 143px;
     }
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+     max-width: 486px;
+ }
 
 }
 
@@ -141,9 +178,14 @@ margin-top: 40px;
     background: $bgWhite;
         @media screen and(max-width: map-get($breakpoints, laptop)) {
             width: 13px;
-height: 13px;
+            height: 13px;
         }
+        @media screen and(max-width: map-get($breakpoints, tablet)) {
+    width: 10px;
+    height: 10px;
 }
+}
+
 
 .range__btn {
     border: none;
@@ -155,6 +197,11 @@ height: 13px;
 .range-icon--play {
     width: 23px;
     height: 31px;
+    @media screen and(max-width: map-get($breakpoints, tablet)-1){
+width: 14px;
+height: 18px;
+
+    }
 }
 
 .range-icon--volume {
@@ -165,6 +212,11 @@ height: 13px;
         width: 26px;
         height: 20px;
     }
+     @media screen and(max-width: map-get($breakpoints, tablet)-1) {
+     width: 18px;
+     height: 14px;
+
+ }
 }
 
 .range-icon--frame {
@@ -174,6 +226,11 @@ height: 13px;
     @media screen and(max-width: map-get($breakpoints, laptop)) {
         width: 26px;
         height: 26px;
+    }
+        @media screen and(max-width: map-get($breakpoints, tablet)-1) {
+        width: 18px;
+        height: 18px;
+
     }
 }
 
@@ -198,15 +255,17 @@ margin-top: 40px;
        
         @media screen and(max-width: map-get($breakpoints, desktop)-1px) {
         column-gap: 41px;
-   }
-     @media screen and(max-width: map-get($breakpoints, tablet)) {
-      margin-top: 20px;
-  }
+   }   
      
   @media screen and(max-width: map-get($breakpoints, laptop)-1px) {
     column-gap: 20px;
 }
-
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+      margin-top: 20px;
+  }
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+      margin-top: 40px;
+  }
     }
     .video__slide{
         flex: 0 0 100%;
@@ -256,6 +315,7 @@ height: 12px;
 }
   @media screen and(max-width: map-get($breakpoints, mobile)) {
       width: 174px;
+      margin-top: 40px;
       
 
   }
@@ -308,7 +368,13 @@ cursor: pointer;
     height: 12px;
     fill: #999;
             transition: fill $transition-time $transition-duration;
+
+@media screen and(max-width: map-get($breakpoints, tablet)-1) {
+     width: 7px;
+ height: 8px;
 }
+
+        }
 
 .video__btn-dot.active,
 .video__btn-dot:hover,

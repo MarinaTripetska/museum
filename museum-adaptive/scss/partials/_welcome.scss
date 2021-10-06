@@ -1,4 +1,4 @@
-.welcome{    
+.welcome__section{    
      min-height: 810px;
     //  overflow-x: hidden;
 
@@ -10,6 +10,10 @@
 
       min-height: 100%;
   }
+  @media screen and(max-width: map-get($breakpoints, mobile)) {
+
+   padding-top: 5px;
+}
     }
 
 .welcome__flex-box{
@@ -287,8 +291,8 @@ align-items: center;
 @media screen and(max-width: map-get($breakpoints, laptop)) {
      width: 71px;
 }
-@media screen and(max-width: map-get($breakpoints, tablet)) {
-    // width: 50px;
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    width: 50px;
 }
 }
 

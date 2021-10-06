@@ -92,6 +92,14 @@ border-radius: 2px;
 cursor: pointer;
 transition: background-color 250ms linear,
 color 250ms linear;
+
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+font-size: 16px;
+line-height: 0px;
+
+}
+
+
 &:hover,
 &:focus{
     color: $txtBlack;
@@ -212,8 +220,8 @@ border: solid 1px $bgBlack;
    margin-top: 10px;
 }
 @media screen and(max-width: map-get($breakpoints, mobile)) {
-    width: 175px;
-    margin-top: 10px;
+    // width: 175px;
+    margin-top: 15px;
 }
 }
 .num__btn{
@@ -242,18 +250,27 @@ text-align: center;
 .total{
 letter-spacing: 1.65px;
    margin-top: 47px;
-
+display: flex;
+justify-content: space-between;
           @media screen and(max-width: map-get($breakpoints, laptop)) {
                 margin-top: 25px;
           }
           @media screen and(max-width: map-get($breakpoints, tablet)) {
     margin-top: 39px;
 }
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+       max-width: 175px;
+    }
+
 }
 .total__prise{
        @media screen and(max-width: map-get($breakpoints, laptop)) {
 margin-left: 5px;
 
+@media screen and(max-width: map-get($breakpoints, mobile)) {
+    margin-left: 0;
+
+}
        } 
 }
 .radio__container--margin-t{
@@ -275,8 +292,3 @@ margin-top: 50px;
 
  }
 }
-// .number {
-//     all: unset;
-//     width: 3em;
-//     text-align: center;
-// }

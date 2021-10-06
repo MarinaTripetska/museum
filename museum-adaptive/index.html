@@ -192,7 +192,7 @@
       </div>
     </header>
     <main>
-      <section id="welcome" class="welcome section-dark">
+      <section id="welcome" class="welcome__section section-dark">
         <div class="container welcome__flex-box">
           <div class="welcome__txt-box">
             <h1 class="visually-hidden">Louvre Museum</h1>
@@ -641,7 +641,7 @@
                 </div>
 
                 <p class="tickets__headline total">
-                  Total €
+                  <span> Total </span><span>€</span>
                   <span class="total__prise">220</span>
                 </p>
                 <button
@@ -718,7 +718,11 @@
     <footer class="footer section-dark">
       <div class="container footer__top">
         <a class="logo footer__logo link" href="./index.html">
-          <img src="./assets/svg/logo.svg" alt="logo" width="49" height="26" />
+          <img
+            class="footer__logo-img"
+            src="./assets/svg/logo.svg"
+            alt="logo"
+          />
 
           <span class="footer__logo-txt logo__txt">Louvre</span></a
         >
@@ -814,7 +818,7 @@
       <div class="container footer-bottom">
         <p>&#169; 2021</p>
         <a
-          class="link footer__nav-link"
+          class="link footer__nav-link footer__nav-link2"
           href="https://rs.school/"
           target="_blank"
           rel="noopener noreferrer"

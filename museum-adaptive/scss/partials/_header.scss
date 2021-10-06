@@ -58,7 +58,7 @@ height:26px;
 //     margin-right: 10px;
 // }
 @media screen and(max-width: map-get($breakpoints, mobile)) {
-    
+    margin-right: 20px;
 width:29px;
      height:16px;
 }
@@ -70,6 +70,7 @@ width:29px;
 
 
 .nav{
+    min-width: 775px;
 @media screen and (max-width: map-get($breakpoints, laptop)) {
     position: absolute;
     top: 130px;
