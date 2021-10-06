@@ -70,7 +70,7 @@ width:29px;
 
 
 .nav{
-    min-width: 775px;
+    max-width: 775px;
 @media screen and (max-width: map-get($breakpoints, laptop)) {
     position: absolute;
     top: 130px;
