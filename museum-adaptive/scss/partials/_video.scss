@@ -1,4 +1,8 @@
-
+.video__section{
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+    padding-bottom: 80px;
+     }
+}
     .video__header{
 display: flex;
 justify-content: space-between;
@@ -21,6 +25,9 @@ line-height: 1.73;
         @media screen and(max-width: map-get($breakpoints, laptop)) {
 margin-top: 40px;
         }
+        @media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 20px;
+}
 }
 .template-play-video--btn {
     position: absolute;
@@ -40,7 +47,10 @@ margin-top: 40px;
  transform: translate(-50%, -65%);
 
         }
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+      transform: translate(-50%, -75%);
 
+  }
 
 }
 .template-play-video--icon {
@@ -189,6 +199,9 @@ margin-top: 40px;
         @media screen and(max-width: map-get($breakpoints, desktop)-1px) {
         column-gap: 41px;
    }
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+      margin-top: 20px;
+  }
      
   @media screen and(max-width: map-get($breakpoints, laptop)-1px) {
     column-gap: 20px;
@@ -237,6 +250,10 @@ margin-left: auto;
 margin-right: auto;
 width: 200px;
 height: 12px;  
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 21px;
+    width: 190px;
+}
   @media screen and(max-width: map-get($breakpoints, mobile)) {
       width: 174px;
       
@@ -249,10 +266,11 @@ height: 12px;
      flex: 1 0 100%;
      max-width: 140px;
      justify-content: space-between;
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+    max-width: 135px;
+}
       @media screen and(max-width: map-get($breakpoints, mobile)) {
      max-width: 120px;
-
-
  }
    
  }   
@@ -263,7 +281,10 @@ height: 12px;
         background-color: #999999;
         transition:  background-color $transition-time $transition-duration;
    cursor: pointer;
-
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+       width: 10px;
+    height: 10px;
+}
    @media screen and(max-width: map-get($breakpoints, mobile)) {
     width: 8px;
  height: 8px;

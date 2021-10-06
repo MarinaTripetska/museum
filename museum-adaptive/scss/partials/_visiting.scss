@@ -1,3 +1,9 @@
+.visiting__section{
+     @media screen and(max-width: map-get($breakpoints, tablet)) {
+    padding-bottom: 80px;
+     }
+
+}
 .visiting__list{
     display: flex;
     justify-content: center;
@@ -13,8 +19,9 @@ column-gap: 60px;
      padding: 0 108px;  
 }
   @media screen and(max-width: map-get($breakpoints, tablet)) {
-      row-gap: 40px;
+      row-gap: 38px;
       column-gap: 56px;
+      padding: 0 56px;
   }
   @media screen and(max-width: 550px) {
     row-gap: 20px;
@@ -38,6 +45,7 @@ column-gap: 60px;
  }
   @media screen and(max-width: map-get($breakpoints, tablet)) {
      width: calc(50% - 28px);
+    //  min-height: 301px;
     //  max-width: 280px;
 
  }
@@ -51,6 +59,14 @@ column-gap: 60px;
  }
 
 }
+
+.visiting__img{
+  @media screen and(max-width: map-get($breakpoints, tablet)) {
+    max-height: 180px;
+}  
+}
+
+
 .card__name{
     font-family: Forum;
 font-weight:400;
@@ -137,7 +153,8 @@ font-size: 16px;
 line-height: 1.19;
 }
 @media screen and(max-width: map-get($breakpoints, tablet)) {
-    font-size: 16px;
+    
+line-height: 1.18;
 }
 
 }

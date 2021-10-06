@@ -25,13 +25,18 @@ min-width: 484px;
     flex: 1 1 100%;
     // max-width: 720px;
     position: relative;
-  
+  max-width: 720px;
     @media screen and(max-width:  map-get($breakpoints,desktop )-1){
         margin: 0 auto 0 auto;
         display: flex;
     justify-content: center;
     
     }
+
+       @media screen and(max-width: map-get($breakpoints, tablet)) {
+      margin-top: 40px;
+
+   }
 
 }
 
@@ -76,6 +81,9 @@ color: #CAAA7D;
 }
 .explore__img{
 max-width: 720px;
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+max-width: 100%;
+ }
 }
 // .explore-slider-dash{
 //     display: none;

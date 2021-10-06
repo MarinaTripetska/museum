@@ -29,15 +29,20 @@ margin-right: 145px;
    @media screen and(max-width: 1150px) {
 height: auto;
 }
-// @media screen and(max-width: 1150px) {   
-//     margin-right: 99px;
-// }
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+  position: relative;
+  top:10px;
+  margin-right: 99px;
+   
+}
 }
 .footer__nav{
    max-width: 367px;
    max-height: 128px;
  @media screen and(max-width: map-get($breakpoints, tablet)) {
      max-width: 340px;
+     position: relative;
+     top: 20px;
  }
     @media screen and(max-width: map-get($breakpoints, mobile)) {
     max-width: 380px;
@@ -91,7 +96,8 @@ color: $txtWhite;
  align-self: flex-end;
  max-width: 340px;
   @media screen and(max-width: 985px) {
-          margin-top: 42px;
+          margin-top: 50px;
+          margin-right: 90px;
       }
 }
 
@@ -121,4 +127,8 @@ line-height: 1;
 letter-spacing: 2px;
 
 color: $txtWhite;
+
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+     padding: 40px 20px;
+ }
 }

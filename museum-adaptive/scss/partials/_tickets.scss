@@ -159,7 +159,34 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 }
+.num__container--margin-t {
+    margin-top: 25px;
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 39px;
 
+}
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+        margin-top: 20px;
+
+    }
+   
+}
+
+.num__container2 {
+    margin-top: 15px;
+
+    @media screen and(max-width: map-get($breakpoints, laptop)) {
+        margin-top: 29px;
+    }
+    @media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 25px;
+}
+
+    @media screen and(max-width: map-get($breakpoints, mobile)) {
+        margin-top: 20px;
+
+    }
+}
 .num__age{
    font-size: 22px;
  @media screen and(max-width: map-get($breakpoints, mobile)) {
@@ -212,15 +239,18 @@ text-align: center;
     padding: 0;
 }
 
-.tickets__headline--total{
+.total{
 letter-spacing: 1.65px;
    margin-top: 47px;
 
           @media screen and(max-width: map-get($breakpoints, laptop)) {
                 margin-top: 25px;
           }
+          @media screen and(max-width: map-get($breakpoints, tablet)) {
+    margin-top: 39px;
 }
-.total-prise{
+}
+.total__prise{
        @media screen and(max-width: map-get($breakpoints, laptop)) {
 margin-left: 5px;
 
@@ -229,32 +259,17 @@ margin-left: 5px;
 .radio__container--margin-t{
 margin-top: 50px;
 }
-.num__container--margin-t{
-    margin-top: 25px;
 
-     @media screen and(max-width: map-get($breakpoints, mobile)) {
-     margin-top: 20px;
-
- }
-}
-
-.num__container2{
- margin-top: 15px;
- @media screen and(max-width: map-get($breakpoints, laptop)) {
-    
-        margin-top: 29px;
-    }
-       @media screen and(max-width: map-get($breakpoints, mobile)) {
-        margin-top: 20px;
-
-    }
-}
 .tickets__btn--margin-t{
     margin-top: 60px;
     @media screen and(max-width: map-get($breakpoints, desktop)-20) {
    margin-top: 69px;
    
 }
+ @media screen and(max-width: map-get($breakpoints, tablet)) {
+     margin-top: 40px;
+
+ }
  @media screen and(max-width: map-get($breakpoints, mobile)) {
      margin-top: 40px;
 
