@@ -118,7 +118,7 @@ margin-top: 4px;
 }
 
 .progress__video,
-.progress__voise {
+.progress__voice {
     background-color: #C4C4C4;
 
     width: 100%;
@@ -155,7 +155,7 @@ max-width: 100%;
   }
 }
 
-.progress__voise {
+.progress__voice {
     max-width: 155px;
     background-image: linear-gradient(to right, #710707 0%, #710707 40%, #C4C4C4 40%, #C4C4C4 100%);
 
@@ -169,7 +169,7 @@ max-width: 100%;
 }
 
 .progress__video::-webkit-slider-thumb,
-.progress__voise::-webkit-slider-thumb {
+.progress__voice::-webkit-slider-thumb {
     width: 15px;
     height: 15px;
     border-radius: 50%;

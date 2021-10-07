@@ -62,11 +62,27 @@
             <picture class="nav__img nav__img1">
               <source
                 srcset="
+                  ./assets/img/header/header-menu1-mobile@1x.webp 1x,
+                  ./assets/img/header/header-menu1-mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:420px)"
+              />
+              <source
+                srcset="
                   ./assets/img/header/header-menu1-mobile@1x.jpg 1x,
                   ./assets/img/header/header-menu1-mobile@2x.jpg 2x
                 "
                 type="image/jpg"
                 media="(max-width:420px)"
+              />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu1@1x.webp 1x,
+                  ./assets/img/header/header-menu1@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:768px)"
               />
               <source
                 srcset="
@@ -82,38 +98,69 @@
             <picture class="nav__img nav__img2">
               <source
                 srcset="
+                  ./assets/img/header/header-menu2-mobile@1x.webp 1x,
+                  ./assets/img/header/header-menu2-mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:420px)"
+              />
+              <source
+                srcset="
                   ./assets/img/header/header-menu2-mobile@1x.jpg 1x,
                   ./assets/img/header/header-menu2-mobile@2x.jpg 2x
                 "
                 type="image/jpg"
-                media="(max-width:420px)" />
+                media="(max-width:420px)"
+              />
+              <source srcset=" ./assets/img/header/header-menu2@1x.webp 1x,
+              ./assets/img/header/header-menu2@2x.webp 2x " type="image/webp
+              media="(max-width:768px)" />
               <source
                 srcset="
                   ./assets/img/header/header-menu2@1x.jpg 1x,
                   ./assets/img/header/header-menu2@2x.jpg 2x
                 "
                 type="image/jpg"
-                media="(max-width:768px)" />
-              <img src="./assets/img/header/header-menu2@1x.jpg" alt=""
-            /></picture>
+                media="(max-width:768px)"
+              />
+              <img src="./assets/img/header/header-menu2@1x.jpg" alt="" />
+            </picture>
 
             <picture class="nav__img nav__img3">
+              <source
+                srcset="
+                  ./assets/img/header/header-menu3-mobile@1x.webp 1x,
+                  ./assets/img/header/header-menu3-mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:420px)"
+              />
               <source
                 srcset="
                   ./assets/img/header/header-menu3-mobile@1x.jpg 1x,
                   ./assets/img/header/header-menu3-mobile@2x.jpg 2x
                 "
                 type="image/jpg"
-                media="(max-width:420px)" />
+                media="(max-width:420px)"
+              />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu3@1x.webp 1x,
+                  ./assets/img/header/header-menu3@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:768px)"
+              />
               <source
                 srcset="
                   ./assets/img/header/header-menu3@1x.jpg 1x,
                   ./assets/img/header/header-menu3@2x.jpg 2x
                 "
                 type="image/jpg"
-                media="(max-width:768px)" />
-              <img src="./assets/img/header/header-menu3@1x.jpg" alt=""
-            /></picture>
+                media="(max-width:768px)"
+              />
+              <img src="./assets/img/header/header-menu3@1x.jpg" alt="" />
+            </picture>
           </div>
           <ul class="header__social-list social-list list">
             <li class="social-item">
@@ -227,19 +274,86 @@
           <div class="welcome__slider-wraper">
             <ul class="list welcome__slider">
               <li class="welcome__slide active">
-                <img src="./assets/img/welcome-slider/1.jpg" alt="Mona Liza" />
+                <picture>
+                  <source
+                    srcset="
+                      ./assets/img/welcome-slider/1-tablet-1x.webp 1x,
+                      ./assets/img/welcome-slider/1-tablet-2x.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/welcome-slider/1-tablet-1x.jpg 1x,
+                      ./assets/img/welcome-slider/1-tablet-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="./assets/img/welcome-slider/1.webp 1x"
+                    type="image/webp"
+                  />
+
+                  <img
+                    src="./assets/img/welcome-slider/1.jpg"
+                    alt="Mona Liza"
+                  />
+                </picture>
               </li>
               <li class="welcome__slide">
-                <img src="./assets/img/welcome-slider/2.jpg" alt="2" />
+                <picture>
+                  <source
+                    srcset="./assets/img/welcome-slider/2.webp 1x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/welcome-slider/2.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./assets/img/welcome-slider/2.jpg" alt="2" />
+                </picture>
               </li>
               <li class="welcome__slide">
-                <img src="./assets/img/welcome-slider/3.jpg" alt="3" />
+                <picture>
+                  <source
+                    srcset="./assets/img/welcome-slider/3.webp 1x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/welcome-slider/3.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./assets/img/welcome-slider/3.jpg" alt="3" />
+                </picture>
               </li>
               <li class="welcome__slide">
-                <img src="./assets/img/welcome-slider/4.jpg" alt="4" />
+                <picture>
+                  <source
+                    srcset="./assets/img/welcome-slider/4.webp 1x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/welcome-slider/4.jpg 1x"
+                    type="image/jpg"
+                  />
+
+                  <img src="./assets/img/welcome-slider/4.jpg" alt="4" />
+                </picture>
               </li>
               <li class="welcome__slide">
-                <img src="./assets/img/welcome-slider/5.jpg" alt="5" />
+                <picture>
+                  <source
+                    srcset="./assets/img/welcome-slider/5.webp 1x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./assets/img/welcome-slider/5.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./assets/img/welcome-slider/5.jpg" alt="5" />
+                </picture>
               </li>
             </ul>
 
@@ -310,22 +424,19 @@
             </div>
           </div>
           <div class="explore__column-img">
-            <img
-              class="explore__img"
-              src="./assets/img/explore/after.jpg"
-              alt=""
-            />
-            <!-- <picture>
-              <source srcset="./assets/img/explore/template-tablet.jpg"
-              media="(max-width:768px)"
-              type="image/jpg"> 
-             <img
-              class="explore__img"
-              src="./assets/img/explore/before-small.jpg"
-              alt="art before restoration"
-            /> 
+            <picture>
+              <source
+                srcset="./assets/img/explore/after.webp"
+                type="image/webp"
+              />
+              <img
+                class="explore__img"
+                src="./assets/img/explore/after.jpg"
+                alt="after"
+              />
             </picture>
-            
+
+            <!--  
             <svg class="explore-slider-dash">
               <use href="./assets/svg/sprite.svg#explore-slider-dash"></use>
             </svg> -->
@@ -344,11 +455,19 @@
           </div>
 
           <div class="video__big-slide">
-            <img
-              class="template-main-video"
-              src="./assets/template-main-video.jpg"
-              alt="main video template"
-            />
+            <picture>
+              <source
+                srcset="./assets/img/video-img/template-main-video.webp"
+                type="image/webp"
+              />
+
+              <img
+                class="template-main-video"
+                src="./assets/img/video-img/template-main-video.jpg"
+                alt="main video template"
+              />
+            </picture>
+
             <button class="template-play-video--btn">
               <svg class="template-play-video--icon">
                 <use
@@ -402,7 +521,7 @@
                       a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
                       a:hover:before {background: #c0171c;}</style>
                       <a href='https://www.youtube-nocookie.com/embed/zp1BXPX8jcU'>
-              <img width=100% src='./assets/video-template1.jpg' alt=''></a>"
+              <img width=100% src='./assets/img/video-img/video-template1.jpg' alt=''></a>"
                 src="https://www.youtube-nocookie.com/embed/zp1BXPX8jcU"
                 title="YouTube video player"
                 allow="autoplay"
@@ -418,7 +537,7 @@
                       a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
                       a:hover:before {background: #c0171c;}</style>
                 <a href='https://www.youtube-nocookie.com/embed/Vi5D6FKhRmo'>
-              <img width=100% height=100% src='./assets/video-template2.jpg' alt=''></a>"
+              <img width=100% height=100% src='./assets/img/video-img/video-template2.jpg' alt=''></a>"
                 loading="lazy"
                 src="https://www.youtube.com/embed/Vi5D6FKhRmo"
                 title="YouTube video player"
@@ -435,7 +554,7 @@
                       a:after {margin: -1.9vw 0 0 -1vw; border: 2vw solid transparent; border-left: 3.8vw solid #fff;} 
                       a:hover:before {background: #c0171c;}</style>
                 <a href='https://www.youtube-nocookie.com/embed/NOhDysLnTvY'>
-              <img width=100% height=auto src='./assets/video-template4.jpg' alt=''></a>"
+              <img width=100% height=auto src='./assets/img/video-img/video-template4.jpg' alt=''></a>"
                 loading="lazy"
                 src="https://www.youtube.com/embed/NOhDysLnTvY"
                 title="YouTube video player"
@@ -497,26 +616,66 @@
             <picture class="tickets-img">
               <source
                 srcset="
-                  ./assets/img/tickets-img-mobile-1x.jpg 1x,
-                  ./assets/img/tickets-img-mobile-2x.jpg 2x
+                  ./assets/img/tickets/tickets-img-mobile-1x.webp 1x,
+                  ./assets/img/tickets/tickets-img-mobile-2x.webp 2x
+                "
+                media="(max-width: 420px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/img/tickets/tickets-img-mobile-1x.jpg 1x,
+                  ./assets/img/tickets/tickets-img-mobile-2x.jpg 2x
                 "
                 media="(max-width: 420px)"
                 type="image/jpeg"
               />
               <source
                 srcset="
-                  ./assets/img/tickets-img-tablet-1x.jpg 1x,
-                  ./assets/img/tickets-img-tablet-2x.jpg 2x
+                  ./assets/img/tickets/tickets-img-tablet-1x.webp 1x,
+                  ./assets/img/tickets/tickets-img-tablet-2x.webp 2x
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/img/tickets/tickets-img-tablet-1x.jpg 1x,
+                  ./assets/img/tickets/tickets-img-tablet-2x.jpg 2x
                 "
                 media="(max-width: 768px)"
                 type="image/jpeg"
               />
               <source
                 srcset="
-                  ./assets/img/tickets-img-laptop-1x.jpg 1x,
-                  ./assets/img/tickets-img-laptop-2x.jpg 2x
+                  ./assets/img/tickets/tickets-img-laptop-1x.webp 1x,
+                  ./assets/img/tickets/tickets-img-laptop-2x.webp 2x
                 "
                 media="(max-width: 1024px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/img/tickets/tickets-img-laptop-1x.jpg 1x,
+                  ./assets/img/tickets/tickets-img-laptop-2x.jpg 2x
+                "
+                media="(max-width: 1024px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./assets/img/tickets/tickets-sec-img.webp        1x,
+                  ./assets/img/tickets/tickets-img-desktop-2x.webp 2x
+                "
+                media="(min-width: 1025px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./assets/img/tickets/tickets-sec-img.jpg        1x,
+                  ./assets/img/tickets/tickets-img-desktop-2x.jpg 2x
+                "
+                media="(min-width: 1025px)"
                 type="image/jpeg"
               />
 
@@ -748,7 +907,9 @@
             </li>
           </ul>
         </nav>
-
+        <picture>
+          <source srcset="./" type="image/webp" />
+        </picture>
         <ul class="social-list footer__social-list list">
           <li class="social-item">
             <a
