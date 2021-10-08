@@ -1,7 +1,6 @@
 .welcome__section{    
      min-height: 810px;
-    //  overflow-x: hidden;
-
+// background-color: black;
      @media screen and(max-width: map-get($breakpoints, laptop)) {
 
     min-height: 585px;
@@ -230,14 +229,24 @@ min-height: 100%;
 
 .welcome__slider{
 width: 100%;
+position: relative;
+     overflow: hidden;
 }
 .welcome__slide{
     display: none;
+    position: relative;
+    animation: 0.3s ease-in-out;
 }
-.welcome__slide.active{
+.welcome__slide.active,
+.welcome__slide.next{
     display: block;
     width: 100%;
-    height: 100%;
+    // height: 100%;
+}
+.welcome__slide.next{
+    position: absolute;
+    top: 0;
+    // width: 100%;
 }
 
 
@@ -396,5 +405,34 @@ width: 20px;
    fill: $bgBtnGold;
 }
 
+.to-left{
+    animation-name: left;
+}
+.from-right{
+    animation-name: right;
+}
+.to-right{
+     animation-name: right; 
+     animation-direction: reverse;
+}
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+@keyframes left {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes right {
+    from {
+        left: 100%;
+    }
 
-
+    to {
+        left: 0;
+    }
+}

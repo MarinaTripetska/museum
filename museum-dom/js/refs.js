@@ -18,7 +18,7 @@ wlcSecModalCloseBtn:  document.querySelector('[data-modal-close-btn]'),
     wlcSecDotArr: document.querySelectorAll('.dot'),
     wlcSecNumOfImg: document.querySelector('.navigation-num'),
     welcomeSectionImgSet:document.querySelectorAll('.welcome__slide'),
-
+wlcSecSliderContainer: document.querySelector('.welcome__slider'),
     visitingSectionList: document.querySelector('.visiting__list'),
 
 
