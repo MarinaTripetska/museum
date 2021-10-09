@@ -112,9 +112,14 @@
                 type="image/jpg"
                 media="(max-width:420px)"
               />
-              <source srcset=" ./assets/img/header/header-menu2@1x.webp 1x,
-              ./assets/img/header/header-menu2@2x.webp 2x " type="image/webp
-              media="(max-width:768px)" />
+              <source
+                srcset="
+                  ./assets/img/header/header-menu2@1x.webp 1x,
+                  ./assets/img/header/header-menu2@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width:768px)"
+              />
               <source
                 srcset="
                   ./assets/img/header/header-menu2@1x.jpg 1x,
@@ -424,24 +429,27 @@
             </div>
           </div>
           <div class="explore__column-img">
-            <picture>
-              <source
-                srcset="./assets/img/explore/after.webp"
-                type="image/webp"
-              />
-              <img
-                class="explore__img"
-                src="./assets/img/explore/after.jpg"
-                alt="after"
-              />
-            </picture>
-
-            <!--  
-            <svg class="explore-slider-dash">
-              <use href="./assets/svg/sprite.svg#explore-slider-dash"></use>
-            </svg> -->
+            <div class="explore__before">
+              <div class="explore__after"></div>
+            </div>
+            <input
+              class="explore__slider-input"
+              oninput="beforeAfter()"
+              onchange="beforeAfter()"
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              id="explore__input"
+            />
           </div>
         </div>
+        <script>
+          function beforeAfter() {
+            document.querySelector(".explore__after").style.width =
+              document.getElementById("explore__input").value + "%";
+          }
+        </script>
       </section>
 
       <section id="video" class="section video__section">
@@ -907,9 +915,7 @@
             </li>
           </ul>
         </nav>
-        <picture>
-          <source srcset="./" type="image/webp" />
-        </picture>
+
         <ul class="social-list footer__social-list list">
           <li class="social-item">
             <a
