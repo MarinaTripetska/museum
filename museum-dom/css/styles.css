@@ -9,7 +9,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: solid 1px tomato;
 }
 
 body {
