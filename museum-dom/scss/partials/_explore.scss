@@ -76,11 +76,12 @@ display: block;
         margin: 0 auto 0 auto;
         display: flex;
         justify-content: center;
+         margin-top: 40px;
 
     }
 
     @media screen and(max-width: map-get($breakpoints, tablet)) {
-        margin-top: 40px;
+       
  max-width: 728px;
  max-height: 705px;
     }
@@ -109,11 +110,16 @@ height: 100%;
   position: absolute;  
   top: 0;
   right: 0;
+
  @media screen and(max-width: map-get($breakpoints, tablet)-1){
 background-image: url(../assets/img/explore/after-mob.jpg);
-
-
  }
+
+//  @media screen and(max-width: map-get($breakpoints, mobile)-1) {
+//      height: 100vw;
+
+
+//  }
 
 }
 
@@ -131,8 +137,8 @@ background-image: url(../assets/img/explore/after-mob.jpg);
 height: 100%;
  width: 50%;
 
- max-width: 100%;
- min-width: 0%;
+ max-width: 97%;
+ min-width: 3%;
  overflow: visible;
  box-shadow: 10px 0 15px -13px #171717;
 
@@ -160,6 +166,10 @@ height: 100%;
     position: absolute;
     top: 0;
     right: 0;
+
+    @media screen and (max-width: map-get($breakpoints, tablet)){
+        right: -10px;
+    }
     
 }
 }
@@ -195,8 +205,7 @@ max-width: 720px;
     height: 700px;
 border: none;
 
-
-    // height: 100%;
+   // height: 100%;
      opacity: 0;
     width: 40px;
 
@@ -204,13 +213,11 @@ border: none;
 
      @media screen and(max-width: map-get($breakpoints, tablet)-1) {
      height: 368px;
-
+ width: 20px;
 
  }
 
 }
-
-
 }
 
 @keyframes first {

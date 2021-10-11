@@ -25,7 +25,7 @@ wlcSecSliderContainer: document.querySelector('.welcome__slider'),
 exploreSecProgressImg: document.querySelector('.explore__range'),
 
     videoSecProgressVideo: document.querySelector('.progress__video'),
-    videoSecProgressVoise: document.querySelector('.progress__voise'),
+    videoSecProgressVoise: document.querySelector('.progress__voice'),
 
     gallerySecContainer: document.querySelector('.gallery__container'),
     

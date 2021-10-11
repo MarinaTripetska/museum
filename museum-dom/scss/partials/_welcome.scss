@@ -289,8 +289,15 @@ bottom: -75px;
      @media screen and(max-width: map-get($breakpoints, tablet)-50) {
         min-height: 80px; 
         padding: 0 75px;
+       
         column-gap: 25px;
      }
+     @media screen and(max-width: map-get($breakpoints, mobile)-1){
+          padding: 0 20px;
+        margin: 0 auto;
+        column-gap: 10px;
+     }
+
 }
 .navigation-num__box{
 width: 76px;

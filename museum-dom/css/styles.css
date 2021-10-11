@@ -9,6 +9,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: solid 1px tomato;
 }
 
 body {
@@ -978,6 +979,15 @@ img {
   }
 }
 
+@media screen and (max-width: 419px) {
+  .navigation-set-wraper {
+    padding: 0 20px;
+    margin: 0 auto;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
 .navigation-num__box {
   width: 76px;
   display: -webkit-box;
@@ -1510,12 +1520,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .explore__column-img {
-    margin-top: 40px;
     max-width: 728px;
     max-height: 705px;
   }
@@ -1555,8 +1565,8 @@ img {
   left: 0;
   height: 100%;
   width: 50%;
-  max-width: 100%;
-  min-width: 0%;
+  max-width: 97%;
+  min-width: 3%;
   overflow: visible;
   -webkit-box-shadow: 10px 0 15px -13px #171717;
           box-shadow: 10px 0 15px -13px #171717;
@@ -1583,6 +1593,12 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .explore__after::before {
+    right: -10px;
+  }
 }
 
 .explore__slider-input {
@@ -1618,6 +1634,7 @@ img {
 @media screen and (max-width: 767px) {
   .explore__slider-input::-webkit-slider-thumb {
     height: 368px;
+    width: 20px;
   }
 }
 
