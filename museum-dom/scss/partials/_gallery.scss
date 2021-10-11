@@ -17,53 +17,108 @@
      }
 
 }
-.gallery__gradient{
-   position: absolute;
-   bottom: 0; 
-   height: 100%;
-   width: 100%;
-    z-index: 1;
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(2, 1, 1, 1.0));
-}
+// .gallery__gradient{
+//    position: absolute;
+//    bottom: 0; 
+//    height: 100%;
+//    width: 100%;
+//     z-index: 1;
+//    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(2, 1, 1, 1.0));
+// }
 
 
 .gallery__container{
-columns: 3;
-gap: 36px;
-     @media screen and(max-width: map-get($breakpoints, tablet)) {
-columns: 2;
-gap: 24px;
+display: flex;
+flex-direction: column;
+// justify-content: flex-start;
+// align-items: center;
+flex-wrap: wrap;
+column-gap: 36px;
+row-gap: 24px;
+width: 100%;
+max-width: 1440px;
+   max-height: 2900px;
+   overflow: hidden;
+
+
+}
+@media screen and(max-width: 1024px){
+    .gallery__container{
+    // max-width: 984px;
+    max-height: 2000px;
+    column-gap: 36px;
+row-gap: 24px;
+    }
+}
+@media screen and(max-width: 768px){
+     .gallery__container {
+    max-height: 3000px;
+     column-gap: 24px;
      }
 }
-.gallery__container > *{
-    margin-bottom: 24px;
+@media screen and(max-width: 420px) {
+    .gallery__container {
+        max-height: 2000px;
+        column-gap: 24px;
+    }
 }
 
+.gallery__item {
+flex: 1 1 100%;
+    max-width: 456px;
 
-// .gallery__item:nth-child(3n+1) {
-//     order: 1;
-// }
 
-// .gallery__item:nth-child(3n+2) {
-//     order: 2;
-// }
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 400ms linear,
+        opacity 300ms linear;
 
-// .gallery__item:nth-child(3n) {
-//     order: 3;
-// }
- .gallery__item:nth-child(1)
-//  .gallery__item:nth-child(11)
+    @media screen and(max-width: 1024px) {
+        max-width: 304px;
+    }
+    @media screen and(max-width: 768px) {
+    max-width: 352px;
+}
+   @media screen and(max-width: 420px) {
+       max-width: 178px;
+   }
+
+}
+
+.gallery__img {
+    max-width: 100%;
+}
+
+.gallery__item:nth-child(3n+1) {
+    order: 1;
+}
+
+.gallery__item:nth-child(3n+2) {
+    order: 2;
+}
+
+.gallery__item:nth-child(3n) {
+    order: 3;
+}
+ .gallery__item:nth-child(1),
+ .gallery__item:nth-child(3)
  {
       margin-top: 50px;
 
   }
 
-.gallery__img{
-    width: 100%;
-    max-width: 456px;
+.gallery__item:nth-child(3) {
 
-@media screen and(max-width: map-get($breakpoints, desktop) -1px) {
-    max-width: 304px;
+@media screen and(max-width: map-get($breakpoints, tablet)) {
+margin-top: 0;
 }
 }
+  .observe{
+   
+      transform: scale(1);
+      opacity: 1
+  }
+
+
+
 

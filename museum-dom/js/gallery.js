@@ -20,27 +20,54 @@ const imgDataPath = [
     {path:"./assets/img/gallery/gallery15.jpg", webp: "./assets/img/gallery/gallery15.webp", id:15},
 
 ]
+
 function shuffle(arr) {
  let list = [...arr]
 return list.sort(() => Math.random() - 0.5)
-  
 }
 
 
 const templateImg = Handlebars.compile(`
 {{#each this}}
 <li class="gallery__item">
-<picture>
+<picture >
 <source srcset="{{webp}} 1x"
-          type="image/webp">
+          type="image/webp"
+          media="(min-width: 1400px)">
 <img class="gallery__img" src="{{path}}" alt="{{id}}" />
-</picture>
-                
+  </picture>        
               </li>
              {{/each}} `);
 
    const murkup =  templateImg( shuffle(imgDataPath) )
-// console.log( murkup);
+
 
 container.insertAdjacentHTML('beforeend', murkup)
+
+
+
+
+const list = document.getElementById('galleryList')
+
+const liArr = [...list.children]
+
+
+
+const options = {
+    // threshold: 0.3,
+}
+const observer = new IntersectionObserver(callback, options);
+
+function callback(entries, observer) {
+    entries.forEach(entry => {
+        entry.isIntersecting
+            ? entry.target.classList.add('observe')
+            : entry.target.classList.remove('observe')
+    });
+}
+
+liArr.forEach((li) => {
+  observer.observe(li)  
+})
+
 
