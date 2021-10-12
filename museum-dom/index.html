@@ -23,6 +23,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -826,7 +832,7 @@
       <div class="parallax"></div>
 
       <section id="contacts" class="section contacts__section">
-        <div class="container">
+        <div class="contacts__container">
           <h2
             class="
               section-title section-title--white-bg section-title--underline
@@ -850,7 +856,9 @@
                 >mail: info@louvre.fr</a
               >
             </address>
-            <picture>
+            <div class="map" id="map-container"></div>
+
+            <!-- <picture>
               <source
                 srcset="
                   ./assets/img/map-mobile.png    1x,
@@ -876,7 +884,7 @@
                 media="(max-width:1260px)"
               />
               <img src="./assets/img/map.png" alt="map" />
-            </picture>
+            </picture> -->
           </div>
         </div>
       </section>

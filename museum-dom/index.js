@@ -6,3 +6,4 @@ import "./js/visiting-section-build-template.js";
 import "./js/explore.js";
 import "./js/video-section.js";
 import "./js/gallery.js";
+import "./js/map.js"

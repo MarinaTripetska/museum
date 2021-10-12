@@ -29,5 +29,5 @@ exploreSecProgressImg: document.querySelector('.explore__range'),
 
     gallerySecContainer: document.querySelector('.gallery__container'),
     
-
+contactSecMapContainer: document.getElementById('map-container'),
 }

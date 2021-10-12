@@ -55,7 +55,7 @@ img {
   overflow: hidden;
 }
 
-.container {
+.container, .contacts__container {
   width: 100%;
   padding: 0 20px;
   height: auto;
@@ -63,26 +63,26 @@ img {
 }
 
 @media screen and (min-width: 1480px) {
-  .container {
+  .container, .contacts__container {
     max-width: 1440px;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .container, .contacts__container {
     max-width: 1024px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .container, .contacts__container {
     max-width: 768px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .container {
+  .container, .contacts__container {
     max-width: 420px;
   }
 }
@@ -2848,6 +2848,33 @@ img {
 @media screen and (max-width: 1439px) {
   .address__link:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+
+.map {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  min-height: 620px;
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    max-width: 994px;
+    min-height: 454px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    max-width: 728px;
+    min-height: 476px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .map {
+    min-height: 248px;
   }
 }
 
